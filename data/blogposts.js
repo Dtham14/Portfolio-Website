@@ -1,51 +1,46 @@
-import blog1 from "../public/web1.png";
-import blog2 from "../public/web2.png";
-import blog3 from "../public/web3.png";
-import blog4 from "../public/web4.png";
-import blog5 from "../public/web5.png";
-import blog6 from "../public/web6.png";
-
 export const blogPosts = [
     {
         slug: "ai-transforming-education",
         title: "How AI is Transforming Education",
-        excerpt: "Exploring the ways artificial intelligence can personalize learning and support teachers.",
-        content: `**AI** is revolutionizing education by providing personalized learning pathways, automating grading, and offering intelligent tutoring systems. It can help teachers identify gaps in understanding and adapt lessons to student needs, making education more effective and inclusive.`,
-        image: blog1,
-    },
-    {
-        slug: "nextjs-portfolio",
-        title: "Building a Next.js Portfolio",
-        excerpt: "A step-by-step guide to creating your own professional developer portfolio with Next.js and Tailwind CSS.",
-        content: `This tutorial walks you through setting up a portfolio in Next.js, using Tailwind CSS for styling. You'll learn how to create pages, add dynamic routes, and deploy to Vercel for free.`,
-        image: blog2,
-    },
-    {
-        slug: "teaching-kids-to-code",
-        title: "Teaching Kids to Code",
-        excerpt: "Best practices and tips for engaging young learners in programming and STEM projects.",
-        content: `When teaching kids to code, it's important to keep lessons fun, interactive, and age-appropriate. Use games, visual tools like Scratch, and lots of hands-on challenges to keep them engaged.`,
-        image: blog3,
-    },
-    {
-        slug: "free-ai-tools-educators",
-        title: "Top Free AI Tools for Educators",
-        excerpt: "A curated list of powerful AI tools you can use in the classroom—for free.",
-        content: `Explore AI tools like ChatGPT, Google Teachable Machine, and more to create engaging lessons, generate quiz questions, and support differentiated learning in your classroom.`,
-        image: blog4,
-    },
-    {
-        slug: "designing-learning-games",
-        title: "Designing Effective Learning Games",
-        excerpt: "Principles of game-based learning for making fun and effective educational experiences.",
-        content: `Good learning games balance fun and learning outcomes. Focus on clear goals, meaningful choices, and feedback loops that help students master concepts while staying engaged.`,
-        image: blog5,
-    },
-    {
-        slug: "deploying-with-vercel",
-        title: "Deploying with Vercel",
-        excerpt: "How to get your Next.js project online quickly with Vercel's powerful platform.",
-        content: `Vercel makes it easy to deploy Next.js apps with continuous deployment from GitHub. Learn how to set up your repo, connect it to Vercel, and go live with custom domains.`,
-        image: blog6,
+        excerpt: "Exploring how artificial intelligence is reshaping learning experiences across Canada—from K-12 classrooms to post-secondary institutions and adult education programs.",
+        date: "2025-12-22",
+        readTime: "6 min read",
+        author: {
+            name: "Daniel Tham",
+            role: "Software Developer & STEM Educator",
+            image: "/profile-image.jpg",
+        },
+        image: "/classroom.png",
+        content: `Artificial Intelligence and the Future of Education in Canada
+
+Artificial intelligence (AI) is increasingly shaping how education is delivered across Canada. Rather than replacing educators, AI is transforming the ways students learn, teachers teach, and institutions design learning experiences. From K–12 classrooms to post-secondary institutions and adult education programs, AI is becoming an essential tool for personalization, accessibility, and efficiency.
+
+**AI in K–12 Education**
+
+In K–12 settings, AI is primarily enhancing differentiated instruction and formative assessment. Teachers can use AI-supported tools to adapt reading materials to multiple proficiency levels, generate targeted practice activities, and provide immediate feedback to students. This allows learners to progress at an appropriate pace while working toward common learning outcomes.
+
+AI also supports inclusive education by offering language translation, reading support, and guided practice for students who may hesitate to ask questions in traditional classroom settings. As a result, educators are shifting assessment practices toward demonstrations of understanding, reflective explanations, and project-based learning—emphasizing critical thinking over rote responses.
+
+**AI in Post-Secondary Education**
+
+In colleges and universities, AI is reshaping assessment design, academic integrity policies, and workforce preparation. Many institutions are moving toward "AI-aware" coursework that encourages transparency in AI use while focusing evaluation on reasoning, analysis, and application of knowledge.
+
+AI tools also support student success through personalized study resources, adaptive practice questions, and faster feedback on writing and research tasks. Importantly, post-secondary programs are increasingly integrating AI literacy into curricula, ensuring graduates are prepared for AI-enabled professional environments across industries.
+
+**AI in Adult Learning and Workforce Development**
+
+AI has a particularly strong impact on adult education and reskilling initiatives. Flexible, on-demand AI-supported learning enables adults to engage in micro-learning, practice job-specific skills, and receive immediate feedback outside of traditional classroom hours. This is especially valuable for career changers, newcomers to Canada, and learners in rural or remote communities where access to specialized instruction may be limited.
+
+**Benefits for Educators**
+
+For educators, AI reduces administrative workload by assisting with lesson planning, assessment creation, content adaptation, and communication. This allows teachers and instructors to focus more time on direct instruction, mentorship, and relationship-building—areas where human expertise remains essential.
+
+**Key Considerations and Challenges**
+
+Despite its benefits, AI presents important challenges. Data privacy, equity of access, algorithmic bias, and over-reliance on automated tools must be addressed through clear policies, professional development, and responsible implementation. Canadian education systems must also prioritize digital and AI literacy so students learn to critically evaluate AI-generated information and understand its limitations.
+
+**Conclusion**
+
+AI is not a replacement for educators, nor is it a solution in isolation. When implemented thoughtfully, it is a powerful support that enhances learning, improves accessibility, and prepares students for an increasingly complex digital world. The future of education in Canada will depend on how effectively institutions integrate AI while preserving academic integrity, equity, and human-centered teaching.`,
     },
 ];

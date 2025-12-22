@@ -1,4 +1,4 @@
-import { FaCode, FaRobot, FaMusic, FaCalculator, FaBrain, FaChalkboardTeacher } from "react-icons/fa";
+import { FaCode, FaCube, FaMusic, FaCalculator, FaBrain, FaChalkboardTeacher } from "react-icons/fa";
 
 export const services = [
     {
@@ -50,20 +50,20 @@ export const services = [
         rate: "$45/hour",
     },
     {
-        slug: "robotics-coaching",
-        title: "Robotics Coaching",
+        slug: "3d-modeling",
+        title: "3D Modeling with TinkerCAD",
         shortDescription:
-            "Hands-on robotics instruction with Micro:bit and LEGO EV3.",
+            "Learn to create 3D designs and models using TinkerCAD.",
         longDescription:
-            "Build, code, and test robotics projects. Learn about sensors, motors, and control logic in a fun, hands-on environment.",
+            "Discover the world of 3D modeling with TinkerCAD, a free and beginner-friendly design tool. Learn to create objects, understand spatial reasoning, and prepare designs for 3D printing.",
         outline: [
-            "Intro to Robotics Platforms",
-            "Sensors & Actuators",
-            "Programming Challenges",
-            "Team Project Build"
+            "Introduction to TinkerCAD Interface",
+            "Basic Shapes & Manipulation",
+            "Creating Complex Models",
+            "Preparing for 3D Printing"
         ],
-        icon: FaRobot,
-        rate: "$50/hour",
+        icon: FaCube,
+        rate: "$40/hour",
     },
     {
         slug: "ai-counseling",
