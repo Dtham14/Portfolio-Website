@@ -5,96 +5,129 @@ export const services = [
         slug: "coding-lessons",
         title: "Coding Lessons",
         shortDescription:
-            "Learn to code with personalized, project-based instruction in Python and JavaScript.",
-        longDescription:
-            "In this course, you'll learn core programming concepts, build real-world projects, and develop problem-solving skills. We'll cover variables, loops, functions, data structures, and even explore web development with HTML, CSS, and JavaScript.",
-        outline: [
-            "Introduction to Programming",
-            "Python Basics & Projects",
-            "JavaScript for Web",
-            "Final Project & Review"
+            "Personalized, project-based coding instruction for students and beginners",
+        curriculum: [
+            "Introduction to Programming Concepts (logic, variables, loops)",
+            "Python Fundamentals (games, simulations, data projects)",
+            "JavaScript Basics (interactive web elements)",
+            "Problem-solving & computational thinking",
+            "Debugging and best coding practices"
+        ],
+        idealFor: [
+            "Beginners and students (Grades 4+)",
+            "Teens preparing for computer science courses",
+            "Adults transitioning into tech"
         ],
         icon: FaCode,
         rate: "$40/hour",
+        format: "1-on-1 or small group",
+        outcome: "Build real, working projects while learning core programming skills",
     },
     {
         slug: "math-tutoring",
         title: "Math Tutoring",
         shortDescription:
-            "Master essential math skills, from arithmetic to calculus.",
-        longDescription:
-            "Customized lessons for all ages. We'll strengthen foundational concepts, work through problem sets together, and prepare you for exams with confidence.",
-        outline: [
-            "Assessment & Goal Setting",
-            "Core Concepts Review",
-            "Advanced Problem Solving",
-            "Exam Preparation Strategies"
+            "Concept-focused math support tailored to student needs",
+        curriculum: [
+            "Initial Assessment & Goal Setting",
+            "Review of Core Concepts (arithmetic, fractions, algebra, calculus basics)",
+            "Problem-solving strategies",
+            "Homework and exam preparation",
+            "Confidence-building through guided practice"
+        ],
+        idealFor: [
+            "Elementary to high school students",
+            "Students needing remediation or enrichment"
         ],
         icon: FaCalculator,
         rate: "$35/hour",
+        format: "1-on-1",
+        outcome: "Stronger understanding, improved grades, and math confidence",
     },
     {
         slug: "music-lessons",
         title: "Music Lessons",
         shortDescription:
-            "Develop your musical skills in theory, composition, or performance.",
-        longDescription:
-            "Learn to read music, understand harmony and rhythm, and improve performance technique. Lessons are tailored for all skill levels and instruments.",
-        outline: [
-            "Introduction to Music Theory",
-            "Instrument Technique",
-            "Composition Basics",
-            "Performance Practice"
+            "Develop musical understanding through theory, composition, and performance",
+        curriculum: [
+            "Introduction to Music Theory (notation, intervals, chords)",
+            "Instrument Technique (piano-focused, adaptable to others)",
+            "Ear training and rhythm development",
+            "Composition and musical creativity",
+            "Optional technology integration (notation software & digital tools)"
+        ],
+        idealFor: [
+            "Beginners to intermediate students",
+            "Learners interested in both music and technology"
         ],
         icon: FaMusic,
         rate: "$45/hour",
+        format: "1-on-1",
+        outcome: "A strong foundation in music with practical and creative skills",
     },
     {
         slug: "3d-modeling",
         title: "3D Modeling with TinkerCAD",
         shortDescription:
-            "Learn to create 3D designs and models using TinkerCAD.",
-        longDescription:
-            "Discover the world of 3D modeling with TinkerCAD, a free and beginner-friendly design tool. Learn to create objects, understand spatial reasoning, and prepare designs for 3D printing.",
-        outline: [
-            "Introduction to TinkerCAD Interface",
-            "Basic Shapes & Manipulation",
-            "Creating Complex Models",
-            "Preparing for 3D Printing"
+            "Hands-on 3D design for beginners",
+        curriculum: [
+            "Introduction to the TinkerCAD Interface",
+            "Creating and modifying basic shapes",
+            "Aligning, grouping, duplicating, and layering objects",
+            "Creating cutouts and detailed designs",
+            "Project-based builds (structures, models, themed designs)"
+        ],
+        idealFor: [
+            "Students (Grades 3–7)",
+            "Beginners interested in design, engineering, or robotics"
         ],
         icon: FaCube,
         rate: "$40/hour",
+        format: "1-on-1 or small group",
+        outcome: "Create polished 3D models while learning design thinking",
     },
     {
         slug: "ai-counseling",
         title: "AI Counseling",
         shortDescription:
-            "Understand how AI can help your business or personal projects.",
-        longDescription:
-            "Get tailored advice on AI workflows, strategy, and tools. We'll demystify AI concepts and help you plan effective integration.",
-        outline: [
-            "Introduction to AI Concepts",
-            "Identifying Use Cases",
-            "Selecting Tools & Platforms",
-            "Developing an Integration Plan"
+            "Strategic guidance on using AI for real-world applications",
+        curriculum: [
+            "Introduction to AI concepts (in plain language)",
+            "Identifying AI opportunities for your project or business",
+            "Evaluating tools (ChatGPT, automation platforms, AI APIs)",
+            "Ethical and practical considerations",
+            "Next steps and implementation roadmap"
+        ],
+        idealFor: [
+            "Entrepreneurs",
+            "Educators",
+            "Creators and developers exploring AI adoption"
         ],
         icon: FaBrain,
         rate: "$60/hour",
+        format: "Consultation",
+        outcome: "Clear direction on how AI can support your goals",
     },
     {
         slug: "ai-education",
         title: "AI Education",
         shortDescription:
-            "Learn AI fundamentals and use tools like ChatGPT and Hugging Face.",
-        longDescription:
-            "We’ll cover machine learning concepts, prompt engineering, and ethical AI use. Hands-on with popular AI APIs and frameworks.",
-        outline: [
-            "Intro to Machine Learning",
-            "Prompt Engineering Basics",
-            "Using OpenAI & Hugging Face",
-            "Ethical Considerations in AI"
+            "Learn how AI works and how to use it effectively",
+        curriculum: [
+            "Introduction to Artificial Intelligence & Machine Learning",
+            "How modern AI tools work (LLMs, image generation, assistants)",
+            "Prompt engineering fundamentals",
+            "Responsible and ethical AI use",
+            "Hands-on practice with real tools"
+        ],
+        idealFor: [
+            "Students and educators",
+            "Beginners interested in AI literacy",
+            "Professionals wanting foundational AI knowledge"
         ],
         icon: FaChalkboardTeacher,
         rate: "$55/hour",
+        format: "1-on-1 or small group",
+        outcome: "Practical understanding of AI and how to use it confidently",
     },
 ];

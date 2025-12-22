@@ -13,8 +13,12 @@ import {
     FaNetworkWired,
     FaTerminal,
     FaArrowRight,
+    FaDownload,
+    FaQuoteLeft,
+    FaStar,
 } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { testimonials } from "../data/testimonials";
 
 const skills = [
     { icon: FaPython, name: "Python", category: "Languages" },
@@ -84,6 +88,14 @@ export default function Home() {
                             <Link href="/contact" className="btn-secondary">
                                 Get In Touch
                             </Link>
+                            <a
+                                href="/resume.pdf"
+                                download
+                                className="btn-secondary group"
+                            >
+                                <FaDownload className="text-sm" />
+                                Resume
+                            </a>
                         </div>
 
                         {/* Stats */}
@@ -202,6 +214,60 @@ export default function Home() {
                                 <span className="text-sm font-medium text-[#a1a1aa] group-hover:text-white transition-colors">
                                     {skill.name}
                                 </span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Testimonials Section */}
+            <section className="py-24 relative">
+                <div className="max-w-6xl mx-auto px-6">
+                    <div className="text-center mb-16">
+                        <span className="badge mb-4">Testimonials</span>
+                        <h2 className="section-title">
+                            What people say
+                        </h2>
+                        <p className="section-subtitle mx-auto">
+                            Feedback from students, parents, and educators I've worked with
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {testimonials.map((testimonial, index) => (
+                            <div
+                                key={index}
+                                className="glass-card p-6 relative group"
+                            >
+                                {/* Quote Icon */}
+                                <div className="absolute -top-3 -left-3 w-10 h-10 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <FaQuoteLeft className="text-amber-500 text-sm" />
+                                </div>
+
+                                {/* Rating */}
+                                <div className="flex gap-1 mb-4 mt-2">
+                                    {[...Array(testimonial.rating)].map((_, i) => (
+                                        <FaStar key={i} className="text-amber-500 text-sm" />
+                                    ))}
+                                </div>
+
+                                {/* Content */}
+                                <p className="text-[#a1a1aa] leading-relaxed mb-6">
+                                    "{testimonial.content}"
+                                </p>
+
+                                {/* Author */}
+                                <div className="flex items-center gap-3 pt-4 border-t border-[#27272a]">
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-600/20 flex items-center justify-center">
+                                        <span className="text-amber-500 font-semibold text-sm">
+                                            {testimonial.name.charAt(0)}
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <p className="font-medium text-sm">{testimonial.name}</p>
+                                        <p className="text-xs text-[#71717a]">{testimonial.role}</p>
+                                    </div>
+                                </div>
                             </div>
                         ))}
                     </div>

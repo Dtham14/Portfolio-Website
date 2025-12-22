@@ -9,7 +9,7 @@ const projects = [
         description: "Learn music theory through gamified interactive quizzes",
         fullDescription: "An educational platform that teaches music theory through gamification. Features include staff identification, ear training exercises, XP & leveling systems, achievements, daily streaks, and global leaderboards. Includes educator tools for creating classes, custom quizzes with professional notation, and student progress tracking.",
         image: "",
-        tags: ["Next.js", "Education", "Gamification"],
+        tags: ["Next.js", "React", "Supabase"],
         demoLink: "https://www.quiznotes.ca/",
         repoLink: "https://github.com/Dtham14/QuizNotes",
     },
@@ -18,7 +18,7 @@ const projects = [
         description: "AI-powered prediction tool for mobile game PvP matches",
         fullDescription: "A web tool to help millions of players who play the mobile game Epic Seven predict player versus-player match outcomes using data-centric and machine-learning techniques. Built for CMPT 419 at Simon Fraser University.",
         image: "",
-        tags: ["Python", "Machine Learning", "Web App"],
+        tags: ["Python", "Scikit-learn", "Flask"],
         demoLink: "",
         repoLink: "https://github.com/Dtham14/AI-Tool-for-Mobile-Game-Epic-Seven-",
     },
@@ -27,27 +27,27 @@ const projects = [
         description: "ML pipeline for predicting song popularity by genre",
         fullDescription: "A comprehensive data pipeline constructed in Python to gather and clean 50,000 songs using Spotify's web API (Spotipy) to train Machine Learning models that predict which genres of songs are popular. Created for CMPT 353 at SFU.",
         image: "",
-        tags: ["Python", "Data Science", "Spotipy API"],
+        tags: ["Python", "Pandas", "Spotipy"],
         demoLink: "",
         repoLink: "https://github.com/Dtham14/Spotify-Song-Popularity-Analysis",
     },
     {
-        title: "AI Agent Project",
-        description: "Autonomous AI agents for task automation",
-        fullDescription: "An exploration of AI agent architectures for autonomous task completion. This project investigates prompt engineering, tool use, and agent orchestration patterns.",
+        title: "Ollama AI Agent",
+        description: "Local AI agent powered by Ollama",
+        fullDescription: "An AI agent implementation using Ollama for local LLM inference. Explores autonomous task completion with prompt engineering, tool use, and agent orchestration patterns—all running locally without API costs.",
         image: "",
-        tags: ["AI", "LLM", "Agents"],
+        tags: ["Python", "Ollama", "LangChain"],
         demoLink: "",
-        repoLink: "",
+        repoLink: "https://github.com/Dtham14/Ollama-AI-Agent",
     },
     {
-        title: "Interactive Micro:bit Game",
-        description: "Educational learning game with hardware integration",
-        fullDescription: "An interactive learning game utilizing Micro:bit microcontrollers to create engaging STEM education experiences. Features sensor integration and real-time feedback.",
+        title: "Timesheet Program",
+        description: "Automated timesheet management and tracking tool",
+        fullDescription: "A program designed to streamline timesheet management, automating time tracking and reporting workflows for improved productivity and accuracy.",
         image: "",
-        tags: ["Micro:bit", "Education", "Hardware"],
+        tags: ["Python", "Pandas", "Excel"],
         demoLink: "",
-        repoLink: "",
+        repoLink: "https://github.com/Dtham14/Timesheet-Program-",
     },
     {
         title: "Portfolio Website",
@@ -56,7 +56,7 @@ const projects = [
         image: "",
         tags: ["Next.js", "React", "Tailwind CSS"],
         demoLink: "/",
-        repoLink: "",
+        repoLink: "https://github.com/Dtham14/Portfolio-Website",
     },
 ];
 
@@ -95,7 +95,7 @@ export default function Projects() {
                         {projects.map((project, index) => (
                             <div
                                 key={index}
-                                className="glass-card overflow-hidden group"
+                                className="glass-card overflow-hidden group flex flex-col"
                             >
                                 {/* Image */}
                                 <div className="relative h-48 overflow-hidden">
@@ -117,7 +117,7 @@ export default function Projects() {
                                 </div>
 
                                 {/* Content */}
-                                <div className="p-6">
+                                <div className="p-6 flex flex-col flex-1">
                                     {/* Tags */}
                                     <div className="flex flex-wrap gap-2 mb-3">
                                         {project.tags.map((tag, i) => (
@@ -148,7 +148,7 @@ export default function Projects() {
                                     )}
 
                                     {/* Actions */}
-                                    <div className="flex items-center gap-3">
+                                    <div className="flex items-center gap-3 mt-auto pt-4">
                                         {project.repoLink && (
                                             <a
                                                 href={project.repoLink}

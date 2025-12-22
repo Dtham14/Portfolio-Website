@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import { services } from "../../data/services";
-import { FaCheck, FaArrowLeft } from "react-icons/fa";
+import { FaCheck, FaArrowLeft, FaUsers, FaClock, FaTrophy } from "react-icons/fa";
 import emailjs from "emailjs-com";
 
 export default function ServiceDetail() {
@@ -81,9 +81,9 @@ export default function ServiceDetail() {
                         </div>
                         <div>
                             <h1 className="text-4xl md:text-5xl font-bold mb-2">{service.title}</h1>
-                            <div className="flex items-center gap-4">
+                            <div className="flex flex-wrap items-center gap-4 text-sm text-[#a1a1aa]">
                                 <span className="text-2xl font-bold text-gradient">{service.rate}</span>
-                                <span className="text-[#71717a]">per session</span>
+                                <span className="px-3 py-1 bg-[#27272a] rounded-full">{service.format}</span>
                             </div>
                         </div>
                     </div>
@@ -98,17 +98,26 @@ export default function ServiceDetail() {
                         <div className="md:col-span-2 space-y-8">
                             {/* Overview */}
                             <div className="glass-card p-8">
-                                <h2 className="text-xl font-semibold mb-4">Course Overview</h2>
-                                <p className="text-[#a1a1aa] leading-relaxed">
-                                    {service.longDescription}
+                                <h2 className="text-xl font-semibold mb-4">Overview</h2>
+                                <p className="text-[#a1a1aa] leading-relaxed mb-6">
+                                    {service.shortDescription}
                                 </p>
+
+                                {/* Outcome */}
+                                <div className="flex items-start gap-3 p-4 bg-amber-500/5 border border-amber-500/20 rounded-xl">
+                                    <FaTrophy className="text-amber-500 mt-1 flex-shrink-0" />
+                                    <div>
+                                        <p className="text-sm font-medium text-amber-500 mb-1">Outcome</p>
+                                        <p className="text-[#fafafa]">{service.outcome}</p>
+                                    </div>
+                                </div>
                             </div>
 
-                            {/* Outline */}
+                            {/* Curriculum */}
                             <div className="glass-card p-8">
                                 <h2 className="text-xl font-semibold mb-6">What You'll Learn</h2>
                                 <div className="space-y-4">
-                                    {service.outline.map((item, index) => (
+                                    {service.curriculum.map((item, index) => (
                                         <div key={index} className="flex gap-4">
                                             <div className="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center flex-shrink-0">
                                                 <FaCheck className="text-amber-500 text-sm" />
@@ -116,6 +125,22 @@ export default function ServiceDetail() {
                                             <div>
                                                 <p className="text-[#fafafa]">{item}</p>
                                             </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Ideal For */}
+                            <div className="glass-card p-8">
+                                <h2 className="text-xl font-semibold mb-6 flex items-center gap-3">
+                                    <FaUsers className="text-amber-500" />
+                                    Ideal For
+                                </h2>
+                                <div className="space-y-3">
+                                    {service.idealFor.map((item, index) => (
+                                        <div key={index} className="flex items-center gap-3">
+                                            <div className="w-2 h-2 rounded-full bg-amber-500" />
+                                            <p className="text-[#a1a1aa]">{item}</p>
                                         </div>
                                     ))}
                                 </div>

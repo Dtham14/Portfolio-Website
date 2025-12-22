@@ -48,10 +48,10 @@ export default function Services() {
                                     {service.shortDescription}
                                 </p>
 
-                                {/* Outline Preview */}
+                                {/* Curriculum Preview */}
                                 <div className="mb-6">
                                     <ul className="space-y-2">
-                                        {service.outline.slice(0, 2).map((item, i) => (
+                                        {service.curriculum.slice(0, 2).map((item, i) => (
                                             <li key={i} className="flex items-center gap-2 text-sm text-[#71717a]">
                                                 <FaCheck className="text-amber-500 text-xs flex-shrink-0" />
                                                 {item}
