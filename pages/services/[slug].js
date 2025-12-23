@@ -48,7 +48,7 @@ export default function ServiceDetail() {
                 <div className="max-w-4xl mx-auto px-6 py-24 text-center">
                     <h1 className="text-4xl font-bold text-red-500 mb-4">Service Not Found</h1>
                     <p className="text-[#a1a1aa] mb-8">
-                        Sorry, we couldn't find the service you're looking for.
+                        Sorry, we couldn&apos;t find the service you&apos;re looking for.
                     </p>
                     <Link href="/services" className="btn-primary">
                         View All Services
@@ -115,7 +115,7 @@ export default function ServiceDetail() {
 
                             {/* Curriculum */}
                             <div className="glass-card p-8">
-                                <h2 className="text-xl font-semibold mb-6">What You'll Learn</h2>
+                                <h2 className="text-xl font-semibold mb-6">What You&apos;ll Learn</h2>
                                 <div className="space-y-4">
                                     {service.curriculum.map((item, index) => (
                                         <div key={index} className="flex gap-4">
@@ -158,7 +158,7 @@ export default function ServiceDetail() {
                                         </div>
                                         <h4 className="font-semibold mb-2">Request Sent!</h4>
                                         <p className="text-sm text-[#a1a1aa] mb-4">
-                                            I'll get back to you within 24 hours.
+                                            I&apos;ll get back to you within 24 hours.
                                         </p>
                                         <button
                                             onClick={() => setSubmitted(false)}

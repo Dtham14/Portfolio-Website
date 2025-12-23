@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
+import Image from "next/image";
 import {
     FaPython,
     FaReact,
@@ -137,11 +138,12 @@ export default function Home() {
                                     <div className="absolute inset-0 bg-gradient-to-br from-[#1c1c1f] to-[#0a0a0b]" />
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <div className="text-center p-8">
-                                            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 ring-4 ring-amber-500/30">
-                                                <img
+                                            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 ring-4 ring-amber-500/30 relative">
+                                                <Image
                                                     src="/profile-image.jpg"
                                                     alt="Daniel Tham"
-                                                    className="w-full h-full object-cover"
+                                                    fill
+                                                    className="object-cover"
                                                 />
                                             </div>
                                             <h3 className="text-2xl font-semibold mb-2">Daniel Tham</h3>
@@ -174,7 +176,7 @@ export default function Home() {
                                     I specialize in modern web development using <span className="text-amber-500">Next.js</span>, <span className="text-amber-500">React</span>, and <span className="text-amber-500">Tailwind CSS</span>, with fluency in Python, JavaScript, Java, and more. My work spans both software engineering and education.
                                 </p>
                                 <p>
-                                    I've created and led curriculum in coding, robotics, mathematics, music, and artificial intelligence for learners aged 9 to 18. Whether developing AI tools or guiding students through their first Python project, I bring a thoughtful, structured approach that supports growth and curiosity.
+                                    I&apos;ve created and led curriculum in coding, robotics, mathematics, music, and artificial intelligence for learners aged 9 to 18. Whether developing AI tools or guiding students through their first Python project, I bring a thoughtful, structured approach that supports growth and curiosity.
                                 </p>
                             </div>
                             <div className="mt-8">
@@ -229,7 +231,7 @@ export default function Home() {
                             What people say
                         </h2>
                         <p className="section-subtitle mx-auto">
-                            Feedback from students, parents, and educators I've worked with
+                            Feedback from students, parents, and educators I&apos;ve worked with
                         </p>
                     </div>
 
@@ -253,7 +255,7 @@ export default function Home() {
 
                                 {/* Content */}
                                 <p className="text-[#a1a1aa] leading-relaxed mb-6">
-                                    "{testimonial.content}"
+                                    &ldquo;{testimonial.content}&rdquo;
                                 </p>
 
                                 {/* Author */}
@@ -287,11 +289,11 @@ export default function Home() {
                                 Ready to start a project?
                             </h2>
                             <p className="text-[#a1a1aa] text-lg mb-8 max-w-xl mx-auto">
-                                Whether you need a developer for your next project or a tutor for STEM education, I'd love to hear from you.
+                                Whether you need a developer for your next project or a tutor for STEM education, I&apos;d love to hear from you.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4">
                                 <Link href="/contact" className="btn-primary group">
-                                    Let's Connect
+                                    Let&apos;s Connect
                                     <FaArrowRight className="text-sm transition-transform group-hover:translate-x-1" />
                                 </Link>
                                 <Link href="/projects" className="btn-secondary">

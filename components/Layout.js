@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
@@ -86,7 +87,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                             href="/contact"
                             className="btn-primary text-sm"
                         >
-                            Let's Talk
+                            Let&apos;s Talk
                         </Link>
                     </div>
 
@@ -125,7 +126,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                                     onClick={() => setMobileMenuOpen(false)}
                                     className="btn-primary w-full justify-center"
                                 >
-                                    Let's Talk
+                                    Let&apos;s Talk
                                 </Link>
                             </li>
                         </ul>
@@ -181,7 +182,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                                     className="w-10 h-10 rounded-lg bg-[#1c1c1f] border border-[#27272a] flex items-center justify-center hover:border-amber-500 transition-all overflow-hidden group"
                                     aria-label="QuizNotes"
                                 >
-                                    <img src="/quiznotes logo.jpg" alt="QuizNotes" className="w-6 h-6 rounded object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all" />
+                                    <Image src="/quiznotes logo.jpg" alt="QuizNotes" width={24} height={24} className="rounded object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all" />
                                 </a>
                             </div>
                         </div>

@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FaGithub, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from "react-icons/fa";
 
@@ -203,11 +204,11 @@ export default function Projects() {
                                 Have a project in mind?
                             </h2>
                             <p className="text-[#a1a1aa] mb-6 max-w-md mx-auto">
-                                I'm always open to discussing new projects and creative ideas.
+                                I&apos;m always open to discussing new projects and creative ideas.
                             </p>
-                            <a href="/contact" className="btn-primary">
+                            <Link href="/contact" className="btn-primary">
                                 Start a Conversation
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

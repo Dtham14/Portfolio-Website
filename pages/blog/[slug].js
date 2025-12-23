@@ -105,11 +105,12 @@ export default function BlogPost() {
 
                     {/* Author Card */}
                     <div className="flex items-center gap-4 p-4 glass-card rounded-xl">
-                        <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-amber-500/30">
-                            <img
+                        <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-amber-500/30 relative">
+                            <Image
                                 src={post.author.image}
                                 alt={post.author.name}
-                                className="w-full h-full object-cover"
+                                fill
+                                className="object-cover"
                             />
                         </div>
                         <div>
@@ -150,11 +151,12 @@ export default function BlogPost() {
                 <div className="max-w-3xl mx-auto px-6">
                     <div className="glass-card p-8 rounded-2xl">
                         <div className="flex flex-col md:flex-row gap-6 items-start">
-                            <div className="w-20 h-20 rounded-full overflow-hidden ring-2 ring-amber-500/30 flex-shrink-0">
-                                <img
+                            <div className="w-20 h-20 rounded-full overflow-hidden ring-2 ring-amber-500/30 flex-shrink-0 relative">
+                                <Image
                                     src={post.author.image}
                                     alt={post.author.name}
-                                    className="w-full h-full object-cover"
+                                    fill
+                                    className="object-cover"
                                 />
                             </div>
                             <div className="flex-1">

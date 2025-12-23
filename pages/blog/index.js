@@ -90,11 +90,12 @@ export default function Blog() {
 
                                             {/* Author */}
                                             <div className="flex items-center gap-3 pt-4 border-t border-[#27272a]">
-                                                <div className="w-10 h-10 rounded-full overflow-hidden">
-                                                    <img
+                                                <div className="w-10 h-10 rounded-full overflow-hidden relative">
+                                                    <Image
                                                         src={blogPosts[0].author.image}
                                                         alt={blogPosts[0].author.name}
-                                                        className="w-full h-full object-cover"
+                                                        fill
+                                                        className="object-cover"
                                                     />
                                                 </div>
                                                 <div>
@@ -147,11 +148,12 @@ export default function Blog() {
                                                 </p>
                                                 <div className="flex items-center justify-between">
                                                     <div className="flex items-center gap-2">
-                                                        <div className="w-6 h-6 rounded-full overflow-hidden">
-                                                            <img
+                                                        <div className="w-6 h-6 rounded-full overflow-hidden relative">
+                                                            <Image
                                                                 src={post.author.image}
                                                                 alt={post.author.name}
-                                                                className="w-full h-full object-cover"
+                                                                fill
+                                                                className="object-cover"
                                                             />
                                                         </div>
                                                         <span className="text-xs text-[#71717a]">{post.author.name}</span>
