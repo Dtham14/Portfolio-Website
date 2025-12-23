@@ -36,6 +36,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
             <Head>
                 <title>{title}</title>
                 <meta name="description" content="Daniel Tham - Software Developer & STEM Educator" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

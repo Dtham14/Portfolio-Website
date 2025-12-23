@@ -38,6 +38,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -49,6 +50,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* Noise texture overlay */
@@ -281,4 +283,37 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-radius: 9999px;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.875rem 1.25rem;
+    min-height: 44px; /* Touch-friendly minimum size */
+  }
+
+  .input-field {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+
+  /* Ensure tap targets are accessible */
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Prevent text size adjustment on orientation change */
+@media (orientation: landscape) and (max-height: 500px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Safe area insets for notched devices */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .min-h-screen {
+    min-height: calc(100vh - env(safe-area-inset-bottom));
+  }
 }

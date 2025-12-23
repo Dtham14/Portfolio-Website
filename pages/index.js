@@ -99,7 +99,7 @@ export default function Home() {
                         </div>
 
                         {/* Stats */}
-                        <div className="animate-fade-up stagger-5 mt-16 flex flex-wrap gap-12">
+                        <div className="animate-fade-up stagger-5 mt-16 flex flex-wrap gap-8 md:gap-12">
                             <div>
                                 <div className="text-3xl md:text-4xl font-bold text-gradient">250+</div>
                                 <div className="text-sm text-[#71717a] mt-1">Students Taught</div>
@@ -151,10 +151,10 @@ export default function Home() {
                                     </div>
                                 </div>
                                 {/* Floating elements */}
-                                <div className="absolute -top-4 -right-4 w-20 h-20 glass-card rounded-2xl flex items-center justify-center text-amber-500 text-3xl animate-float" style={{animationDuration: '3s'}}>
+                                <div className="hidden sm:flex absolute -top-4 -right-4 w-20 h-20 glass-card rounded-2xl items-center justify-center text-amber-500 text-3xl animate-float" style={{animationDuration: '3s'}}>
                                     <FaPython />
                                 </div>
-                                <div className="absolute -bottom-4 -left-4 w-16 h-16 glass-card rounded-2xl flex items-center justify-center text-amber-500 text-2xl animate-float" style={{animationDuration: '4s', animationDelay: '1s'}}>
+                                <div className="hidden sm:flex absolute -bottom-4 -left-4 w-16 h-16 glass-card rounded-2xl items-center justify-center text-amber-500 text-2xl animate-float" style={{animationDuration: '4s', animationDelay: '1s'}}>
                                     <FaReact />
                                 </div>
                             </div>

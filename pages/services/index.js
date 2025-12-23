@@ -52,9 +52,9 @@ export default function Services() {
                                 <div className="mb-6">
                                     <ul className="space-y-2">
                                         {service.curriculum.slice(0, 2).map((item, i) => (
-                                            <li key={i} className="flex items-center gap-2 text-sm text-[#71717a]">
-                                                <FaCheck className="text-amber-500 text-xs flex-shrink-0" />
-                                                {item}
+                                            <li key={i} className="flex items-start gap-2 text-sm text-[#71717a]">
+                                                <FaCheck className="text-amber-500 text-xs flex-shrink-0 mt-1" />
+                                                <span className="line-clamp-2">{item}</span>
                                             </li>
                                         ))}
                                     </ul>
