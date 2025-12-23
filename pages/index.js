@@ -170,7 +170,7 @@ export default function Home() {
                             </h2>
                             <div className="space-y-4 text-[#a1a1aa] leading-relaxed">
                                 <p>
-                                    I'm <span className="text-white font-medium">Daniel Tham</span>, a dedicated software developer and STEM educator with a passion for building meaningful technology and delivering high-impact learning experiences.
+                                    I&apos;m <span className="text-white font-medium">Daniel Tham</span>, a dedicated software developer and STEM educator with a passion for building meaningful technology and delivering high-impact learning experiences.
                                 </p>
                                 <p>
                                     I specialize in modern web development using <span className="text-amber-500">Next.js</span>, <span className="text-amber-500">React</span>, and <span className="text-amber-500">Tailwind CSS</span>, with fluency in Python, JavaScript, Java, and more. My work spans both software engineering and education.

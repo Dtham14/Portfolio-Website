@@ -25,7 +25,7 @@ export default function BlogPost() {
                 <div className="max-w-4xl mx-auto px-6 py-24 text-center">
                     <h1 className="text-4xl font-bold text-red-500 mb-4">Post Not Found</h1>
                     <p className="text-[#a1a1aa] mb-8">
-                        Sorry, we couldn't find the blog post you're looking for.
+                        Sorry, we couldn&apos;t find the blog post you&apos;re looking for.
                     </p>
                     <Link href="/blog" className="btn-primary">
                         View All Posts

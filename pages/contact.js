@@ -53,10 +53,10 @@ export default function Contact() {
                 <div className="relative max-w-6xl mx-auto px-6 text-center">
                     <span className="badge mb-4">Contact</span>
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                        Let's <span className="text-gradient">Connect</span>
+                        Let&apos;s <span className="text-gradient">Connect</span>
                     </h1>
                     <p className="text-lg text-[#a1a1aa] leading-relaxed max-w-2xl mx-auto">
-                        Have a project in mind or interested in tutoring services? I'd love to hear from you. Fill out the form below and I'll get back to you soon.
+                        Have a project in mind or interested in tutoring services? I&apos;d love to hear from you. Fill out the form below and I&apos;ll get back to you soon.
                     </p>
                 </div>
             </section>
@@ -70,7 +70,7 @@ export default function Contact() {
                             <div>
                                 <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
                                 <p className="text-[#a1a1aa] leading-relaxed">
-                                    Whether you're looking for development services, tutoring, or just want to say hello, I'm here to help.
+                                    Whether you&apos;re looking for development services, tutoring, or just want to say hello, I&apos;m here to help.
                                 </p>
                             </div>
 
@@ -138,7 +138,7 @@ export default function Contact() {
                                         </div>
                                         <h3 className="text-2xl font-bold mb-2">Message Sent!</h3>
                                         <p className="text-[#a1a1aa] mb-6">
-                                            Thank you for reaching out. I'll get back to you within 24 hours.
+                                            Thank you for reaching out. I&apos;ll get back to you within 24 hours.
                                         </p>
                                         <button
                                             onClick={() => setSubmitted(false)}
