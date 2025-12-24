@@ -51,12 +51,10 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
             >
                 <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
                     {/* Logo */}
-                    <Link href="/" className="group flex items-center gap-2">
-                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center font-bold text-[#0a0a0b] text-lg transition-transform group-hover:scale-105">
-                            D
-                        </div>
+                    <Link href="/" className="group flex items-center gap-1">
+                        <Image src="/websitelogo.png" alt="Logo" width={64} height={64} className="object-contain transition-transform group-hover:scale-105" />
                         <span className="font-semibold text-lg hidden sm:block">
-                            Daniel<span className="text-amber-500">.</span>
+                            Daniel Tham
                         </span>
                     </Link>
 
@@ -145,12 +143,10 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                         {/* Brand */}
                         <div className="md:col-span-2">
-                            <Link href="/" className="flex items-center gap-2 mb-4">
-                                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center font-bold text-[#0a0a0b] text-lg">
-                                    D
-                                </div>
+                            <Link href="/" className="flex items-center gap-1 mb-4">
+                                <Image src="/websitelogo.png" alt="Logo" width={64} height={64} className="object-contain" />
                                 <span className="font-semibold text-lg">
-                                    Daniel<span className="text-amber-500">.</span>
+                                    Daniel Tham
                                 </span>
                             </Link>
                             <p className="text-[#71717a] text-sm leading-relaxed max-w-sm mb-6">
