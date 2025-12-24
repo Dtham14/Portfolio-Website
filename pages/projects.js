@@ -15,12 +15,12 @@ const projects = [
         repoLink: "https://github.com/Dtham14/QuizNotes",
     },
     {
-        title: "AI Web Tool for Epic Seven",
+        title: "AI Draft-Assistant for Epic Seven",
         description: "AI-powered prediction tool for mobile game PvP matches",
         fullDescription: "A web tool to help millions of players who play the mobile game Epic Seven predict player versus-player match outcomes using data-centric and machine-learning techniques. Built for CMPT 419 at Simon Fraser University.",
         image: "",
         tags: ["Python", "Scikit-learn", "Flask"],
-        demoLink: "",
+        demoLink: "https://epic-seven-real-time-arena-draft.onrender.com/",
         repoLink: "https://github.com/Dtham14/AI-Tool-for-Mobile-Game-Epic-Seven-",
     },
     {
