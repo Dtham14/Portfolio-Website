@@ -24,15 +24,6 @@ const projects = [
         repoLink: "https://github.com/Dtham14/AI-Tool-for-Mobile-Game-Epic-Seven-",
     },
     {
-        title: "Spotify Song Data Analysis",
-        description: "ML pipeline for predicting song popularity by genre",
-        fullDescription: "A comprehensive data pipeline constructed in Python to gather and clean 50,000 songs using Spotify's web API (Spotipy) to train Machine Learning models that predict which genres of songs are popular. Created for CMPT 353 at SFU.",
-        image: "",
-        tags: ["Python", "Pandas", "Spotipy"],
-        demoLink: "",
-        repoLink: "https://github.com/Dtham14/Spotify-Song-Popularity-Analysis",
-    },
-    {
         title: "Ollama AI Agent",
         description: "Local AI agent powered by Ollama",
         fullDescription: "An AI agent implementation using Ollama for local LLM inference. Explores autonomous task completion with prompt engineering, tool use, and agent orchestration patterns—all running locally without API costs.",
@@ -40,15 +31,6 @@ const projects = [
         tags: ["Python", "Ollama", "LangChain"],
         demoLink: "",
         repoLink: "https://github.com/Dtham14/Ollama-AI-Agent",
-    },
-    {
-        title: "Timesheet Program",
-        description: "Automated timesheet management and tracking tool",
-        fullDescription: "A program designed to streamline timesheet management, automating time tracking and reporting workflows for improved productivity and accuracy.",
-        image: "",
-        tags: ["Python", "Pandas", "Excel"],
-        demoLink: "",
-        repoLink: "https://github.com/Dtham14/Timesheet-Program-",
     },
     {
         title: "Portfolio Website",
