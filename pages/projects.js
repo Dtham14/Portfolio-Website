@@ -25,12 +25,12 @@ const projects = [
     },
     {
         title: "Classical Music AI Assistant",
-        description: "Local AI agent powered by Ollama",
-        fullDescription: "An AI agent implementation using Ollama for local LLM inference. Explores autonomous task completion with prompt engineering, tool use, and agent orchestration patterns—all running locally without API costs.",
+        description: "AI-powered chatbot for exploring classical composer biographies",
+        fullDescription: "A production-ready web application combining AI with classical music knowledge. Features an intelligent chatbot powered by HuggingFace LLMs and Pinecone vector database, providing contextual answers about 107+ composers across seven historical periods. Implements RAG (Retrieval-Augmented Generation) with session persistence and citation-backed responses, all deployed on free tiers.",
         image: "",
         tags: ["Next.js", "Hugging Face", "PostgreSQL"],
         demoLink: "https://nextjs-3s6wdupnr-daniel-thams-projects.vercel.app/",
-        repoLink: "https://github.com/Dtham14/Ollama-AI-Agent",
+        repoLink: "https://github.com/Dtham14/Classical-Music-AI-Powered-Assistant",
     },
     {
         title: "Portfolio Website",
