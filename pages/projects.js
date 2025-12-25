@@ -24,12 +24,12 @@ const projects = [
         repoLink: "https://github.com/Dtham14/AI-Tool-for-Mobile-Game-Epic-Seven-",
     },
     {
-        title: "Ollama AI Agent",
+        title: "Classical Music AI Assistant",
         description: "Local AI agent powered by Ollama",
         fullDescription: "An AI agent implementation using Ollama for local LLM inference. Explores autonomous task completion with prompt engineering, tool use, and agent orchestration patterns—all running locally without API costs.",
         image: "",
-        tags: ["Python", "Ollama", "LangChain"],
-        demoLink: "",
+        tags: ["Next.js", "Hugging Face", "PostgreSQL"],
+        demoLink: "https://nextjs-3s6wdupnr-daniel-thams-projects.vercel.app/",
         repoLink: "https://github.com/Dtham14/Ollama-AI-Agent",
     },
     {
