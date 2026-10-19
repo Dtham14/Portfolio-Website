@@ -24,21 +24,11 @@ const projects = [
         repoLink: "https://github.com/Dtham14/AI-Tool-for-Mobile-Game-Epic-Seven-",
     },
     {
-        title: "Classical Music AI Assistant",
-        description: "AI-powered chatbot for exploring classical composer biographies",
-        fullDescription: "A production-ready web application combining AI with classical music knowledge. Features an intelligent chatbot powered by HuggingFace LLMs and Pinecone vector database, providing contextual answers about 107+ composers across seven historical periods. Implements RAG (Retrieval-Augmented Generation) with session persistence and citation-backed responses, all deployed on free tiers.",
-        image: "",
-        tags: ["Next.js", "Hugging Face", "PostgreSQL"],
-        demoLink: "https://nextjs-3s6wdupnr-daniel-thams-projects.vercel.app/",
-        repoLink: "https://github.com/Dtham14/Classical-Music-AI-Powered-Assistant",
-    },
-    {
         title: "Portfolio Website",
         description: "The website you're currently viewing",
         fullDescription: "A modern, responsive portfolio built with Next.js and Tailwind CSS. Features a refined dark theme with amber accents, smooth animations, glass-morphism effects, and a mobile-friendly design. Showcases my projects, services, and blog.",
         image: "",
         tags: ["Next.js", "React", "Tailwind CSS"],
-        demoLink: "/",
         repoLink: "https://github.com/Dtham14/Portfolio-Website",
     },
 ];
@@ -60,12 +50,12 @@ export default function Projects() {
 
                 <div className="relative max-w-6xl mx-auto px-6">
                     <div className="max-w-2xl">
-                        <span className="badge mb-4">Portfolio</span>
+                        <span className="badge mb-4">Other Work</span>
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                            Featured <span className="text-gradient">Projects</span>
+                            Other <span className="text-gradient">Work</span>
                         </h1>
-                        <p className="text-lg text-[#a1a1aa] leading-relaxed">
-                            A showcase of my work in software development, AI, data science, and STEM education. Each project represents a unique challenge and learning experience.
+                        <p className="text-lg text-[#6b5d4c] leading-relaxed">
+                            A few software projects from my past work in development and AI — kept here for reference alongside my current work in education and piano.
                         </p>
                     </div>
                 </div>
@@ -82,7 +72,7 @@ export default function Projects() {
                             >
                                 {/* Image */}
                                 <div className="relative h-48 overflow-hidden">
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#1c1c1f] to-transparent z-10" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-[#fffdf7] to-transparent z-10" />
                                     {project.image ? (
                                         <Image
                                             src={project.image}
@@ -91,7 +81,7 @@ export default function Projects() {
                                             className="object-cover transition-transform duration-500 group-hover:scale-110"
                                         />
                                     ) : (
-                                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c1c1f] via-[#27272a] to-[#1c1c1f] flex items-center justify-center">
+                                        <div className="absolute inset-0 bg-gradient-to-br from-[#fffdf7] via-[#e7dac3] to-[#fffdf7] flex items-center justify-center">
                                             <div className="text-6xl font-bold text-amber-500/20 group-hover:text-amber-500/30 transition-colors">
                                                 {project.title.split(' ').map(w => w[0]).join('').slice(0, 2)}
                                             </div>
@@ -106,7 +96,7 @@ export default function Projects() {
                                         {project.tags.map((tag, i) => (
                                             <span
                                                 key={i}
-                                                className="px-2 py-1 text-xs font-medium bg-[#27272a] text-[#a1a1aa] rounded"
+                                                className="px-2 py-1 text-xs font-medium bg-[#e7dac3] text-[#6b5d4c] rounded"
                                             >
                                                 {tag}
                                             </span>
@@ -117,14 +107,14 @@ export default function Projects() {
                                         {project.title}
                                     </h2>
 
-                                    <p className="text-[#a1a1aa] text-sm mb-4">
+                                    <p className="text-[#6b5d4c] text-sm mb-4">
                                         {project.description}
                                     </p>
 
                                     {/* Expanded Content */}
                                     {expandedIndex === index && (
-                                        <div className="mb-4 pt-4 border-t border-[#27272a]">
-                                            <p className="text-[#a1a1aa] text-sm leading-relaxed">
+                                        <div className="mb-4 pt-4 border-t border-[#e7dac3]">
+                                            <p className="text-[#6b5d4c] text-sm leading-relaxed">
                                                 {project.fullDescription}
                                             </p>
                                         </div>
@@ -137,7 +127,7 @@ export default function Projects() {
                                                 href={project.repoLink}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 px-4 py-2 text-sm font-medium bg-[#27272a] hover:bg-[#3f3f46] rounded-lg transition-colors"
+                                                className="flex items-center gap-2 px-4 py-2 text-sm font-medium bg-[#e7dac3] hover:bg-[#dccba9] rounded-lg transition-colors"
                                             >
                                                 <FaGithub />
                                                 Code
@@ -148,7 +138,7 @@ export default function Projects() {
                                                 href={project.demoLink}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 px-4 py-2 text-sm font-medium bg-amber-500 hover:bg-amber-400 text-[#0a0a0b] rounded-lg transition-colors"
+                                                className="flex items-center gap-2 px-4 py-2 text-sm font-medium bg-amber-500 hover:bg-amber-400 text-[#fbf5ea] rounded-lg transition-colors"
                                             >
                                                 <FaExternalLinkAlt className="text-xs" />
                                                 Demo
@@ -156,7 +146,7 @@ export default function Projects() {
                                         )}
                                         <button
                                             onClick={() => toggleExpand(index)}
-                                            className="ml-auto flex items-center gap-1 text-sm text-[#71717a] hover:text-amber-500 transition-colors"
+                                            className="ml-auto flex items-center gap-1 text-sm text-[#9c8b73] hover:text-amber-500 transition-colors"
                                         >
                                             {expandedIndex === index ? (
                                                 <>
@@ -183,10 +173,10 @@ export default function Projects() {
                         <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 to-orange-600/5" />
                         <div className="relative">
                             <h2 className="text-2xl md:text-3xl font-bold mb-3">
-                                Have a project in mind?
+                                Curious about one of these projects?
                             </h2>
-                            <p className="text-[#a1a1aa] mb-6 max-w-md mx-auto">
-                                I&apos;m always open to discussing new projects and creative ideas.
+                            <p className="text-[#6b5d4c] mb-6 max-w-md mx-auto">
+                                Happy to talk about any of these if you&apos;re curious.
                             </p>
                             <Link href="/contact" className="btn-primary">
                                 Start a Conversation

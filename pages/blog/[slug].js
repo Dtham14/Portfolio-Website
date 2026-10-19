@@ -24,7 +24,7 @@ export default function BlogPost() {
             <Layout title="Post Not Found">
                 <div className="max-w-4xl mx-auto px-6 py-24 text-center">
                     <h1 className="text-4xl font-bold text-red-500 mb-4">Post Not Found</h1>
-                    <p className="text-[#a1a1aa] mb-8">
+                    <p className="text-[#6b5d4c] mb-8">
                         Sorry, we couldn&apos;t find the blog post you&apos;re looking for.
                     </p>
                     <Link href="/blog" className="btn-primary">
@@ -42,7 +42,7 @@ export default function BlogPost() {
             const headingMatch = paragraph.match(/^\*\*(.+)\*\*$/);
             if (headingMatch) {
                 return (
-                    <h2 key={index} className="text-2xl font-bold text-white mt-10 mb-4">
+                    <h2 key={index} className="text-2xl font-bold text-[#2b2319] mt-10 mb-4">
                         {headingMatch[1]}
                     </h2>
                 );
@@ -51,10 +51,10 @@ export default function BlogPost() {
             // Handle inline bold text
             const parts = paragraph.split(/\*\*(.*?)\*\*/g);
             return (
-                <p key={index} className="text-[#a1a1aa] leading-relaxed mb-6">
+                <p key={index} className="text-[#6b5d4c] leading-relaxed mb-6">
                     {parts.map((part, i) =>
                         i % 2 === 1 ? (
-                            <strong key={i} className="text-white font-medium">
+                            <strong key={i} className="text-[#2b2319] font-medium">
                                 {part}
                             </strong>
                         ) : (
@@ -77,14 +77,14 @@ export default function BlogPost() {
                 <div className="relative max-w-4xl mx-auto px-6">
                     <Link
                         href="/blog"
-                        className="inline-flex items-center gap-2 text-sm text-[#71717a] hover:text-amber-500 transition-colors mb-8"
+                        className="inline-flex items-center gap-2 text-sm text-[#9c8b73] hover:text-amber-500 transition-colors mb-8"
                     >
                         <FaArrowLeft className="text-xs" />
                         Back to Blog
                     </Link>
 
                     {/* Meta info */}
-                    <div className="flex flex-wrap items-center gap-4 text-sm text-[#71717a] mb-4">
+                    <div className="flex flex-wrap items-center gap-4 text-sm text-[#9c8b73] mb-4">
                         <div className="flex items-center gap-2">
                             <FaCalendar className="text-xs" />
                             {formatDate(post.date)}
@@ -101,7 +101,7 @@ export default function BlogPost() {
                         {post.title}
                     </h1>
 
-                    <p className="text-xl text-[#a1a1aa] leading-relaxed mb-8">{post.excerpt}</p>
+                    <p className="text-xl text-[#6b5d4c] leading-relaxed mb-8">{post.excerpt}</p>
 
                     {/* Author Card */}
                     <div className="flex items-center gap-4 p-4 glass-card rounded-xl">
@@ -115,7 +115,7 @@ export default function BlogPost() {
                         </div>
                         <div>
                             <p className="font-semibold">{post.author.name}</p>
-                            <p className="text-sm text-[#71717a]">{post.author.role}</p>
+                            <p className="text-sm text-[#9c8b73]">{post.author.role}</p>
                         </div>
                     </div>
                 </div>
@@ -162,15 +162,15 @@ export default function BlogPost() {
                             <div className="flex-1">
                                 <p className="text-sm text-amber-500 font-medium mb-1">Written by</p>
                                 <h3 className="text-xl font-bold mb-2">{post.author.name}</h3>
-                                <p className="text-[#a1a1aa] text-sm leading-relaxed mb-4">
-                                    {post.author.role}. Passionate about building meaningful technology and delivering high-impact learning experiences.
+                                <p className="text-[#6b5d4c] text-sm leading-relaxed mb-4">
+                                    {post.author.role}. Passionate about supporting students in the classroom and helping young musicians grow through piano.
                                 </p>
                                 <div className="flex gap-3">
                                     <a
                                         href="https://github.com/Dtham14"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-9 h-9 rounded-lg bg-[#27272a] flex items-center justify-center text-[#a1a1aa] hover:text-amber-500 hover:bg-[#3f3f46] transition-all"
+                                        className="w-9 h-9 rounded-lg bg-[#e7dac3] flex items-center justify-center text-[#6b5d4c] hover:text-amber-500 hover:bg-[#dccba9] transition-all"
                                     >
                                         <FaGithub />
                                     </a>
@@ -178,7 +178,7 @@ export default function BlogPost() {
                                         href="https://www.linkedin.com/in/dtham14/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-9 h-9 rounded-lg bg-[#27272a] flex items-center justify-center text-[#a1a1aa] hover:text-amber-500 hover:bg-[#3f3f46] transition-all"
+                                        className="w-9 h-9 rounded-lg bg-[#e7dac3] flex items-center justify-center text-[#6b5d4c] hover:text-amber-500 hover:bg-[#dccba9] transition-all"
                                     >
                                         <FaLinkedin />
                                     </a>
@@ -186,7 +186,7 @@ export default function BlogPost() {
                                         href="https://www.quiznotes.ca/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-9 h-9 rounded-lg bg-[#27272a] flex items-center justify-center text-[#a1a1aa] hover:text-amber-500 hover:bg-[#3f3f46] transition-all"
+                                        className="w-9 h-9 rounded-lg bg-[#e7dac3] flex items-center justify-center text-[#6b5d4c] hover:text-amber-500 hover:bg-[#dccba9] transition-all"
                                     >
                                         <FaGlobe />
                                     </a>
@@ -200,14 +200,14 @@ export default function BlogPost() {
             {/* Navigation */}
             <section className="pb-24">
                 <div className="max-w-4xl mx-auto px-6">
-                    <div className="border-t border-[#27272a] pt-8">
+                    <div className="border-t border-[#e7dac3] pt-8">
                         <div className="grid sm:grid-cols-2 gap-4">
                             {prevPost ? (
                                 <Link
                                     href={`/blog/${prevPost.slug}`}
                                     className="glass-card glass-card-hover p-6 group"
                                 >
-                                    <div className="flex items-center gap-2 text-sm text-[#71717a] mb-2">
+                                    <div className="flex items-center gap-2 text-sm text-[#9c8b73] mb-2">
                                         <FaArrowLeft className="text-xs" />
                                         Previous
                                     </div>
@@ -224,7 +224,7 @@ export default function BlogPost() {
                                     href={`/blog/${nextPost.slug}`}
                                     className="glass-card glass-card-hover p-6 group text-right"
                                 >
-                                    <div className="flex items-center justify-end gap-2 text-sm text-[#71717a] mb-2">
+                                    <div className="flex items-center justify-end gap-2 text-sm text-[#9c8b73] mb-2">
                                         Next
                                         <FaArrowRight className="text-xs" />
                                     </div>

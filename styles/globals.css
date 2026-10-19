@@ -1,35 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* Dark sophistication palette */
-  --bg-primary: #0a0a0b;
-  --bg-secondary: #111113;
-  --bg-tertiary: #18181b;
-  --bg-card: #1c1c1f;
-  --bg-card-hover: #232326;
+  /* Warm, paper-inspired palette */
+  --bg-primary: #fbf5ea;
+  --bg-secondary: #f4ead9;
+  --bg-tertiary: #eee1c9;
+  --bg-card: #fffdf7;
+  --bg-card-hover: #fff6e8;
 
   /* Text colors */
-  --text-primary: #fafafa;
-  --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
+  --text-primary: #2b2319;
+  --text-secondary: #6b5d4c;
+  --text-muted: #9c8b73;
 
-  /* Accent - warm amber/gold */
-  --accent: #f59e0b;
-  --accent-hover: #fbbf24;
-  --accent-muted: rgba(245, 158, 11, 0.15);
+  /* Accent - warm terracotta */
+  --accent: #c2663b;
+  --accent-hover: #d98257;
+  --accent-muted: rgba(194, 102, 59, 0.12);
 
   /* Borders & subtle elements */
-  --border: #27272a;
-  --border-subtle: #1f1f22;
+  --border: #e7dac3;
+  --border-subtle: #efe3cd;
 
   /* Gradients */
-  --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-  --gradient-subtle: linear-gradient(180deg, rgba(245, 158, 11, 0.08) 0%, transparent 100%);
-  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.02) 0%, transparent 100%);
+  --gradient-accent: linear-gradient(135deg, #c2663b 0%, #a04f2b 100%);
+  --gradient-subtle: linear-gradient(180deg, rgba(194, 102, 59, 0.08) 0%, transparent 100%);
+  --gradient-card: linear-gradient(145deg, rgba(43, 35, 25, 0.02) 0%, transparent 100%);
 }
 
 * {
@@ -44,7 +44,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
@@ -53,7 +53,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Noise texture overlay */
+/* Paper texture overlay */
 body::before {
   content: '';
   position: fixed;
@@ -62,16 +62,16 @@ body::before {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  opacity: 0.015;
+  opacity: 0.025;
   z-index: 1000;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Sora', sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   line-height: 1.2;
 }
 
@@ -83,7 +83,7 @@ a {
 /* Selection */
 ::selection {
   background-color: var(--accent);
-  color: var(--bg-primary);
+  color: var(--bg-card);
 }
 
 /* Scrollbar */
@@ -116,8 +116,8 @@ a {
   .glass-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 2px 12px -4px rgba(43, 35, 25, 0.08);
   }
 
   .glass-card-hover {
@@ -128,9 +128,8 @@ a {
     background: var(--bg-card-hover);
     border-color: var(--accent);
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.5),
-                0 0 0 1px var(--accent),
-                0 0 60px -20px var(--accent);
+    box-shadow: 0 16px 32px -12px rgba(43, 35, 25, 0.15),
+                0 0 0 1px var(--accent);
   }
 
   .glow-accent {
@@ -189,11 +188,11 @@ a {
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   background: var(--gradient-accent);
-  color: var(--bg-primary);
-  font-family: 'Sora', sans-serif;
+  color: var(--bg-card);
+  font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   font-size: 0.875rem;
-  border-radius: 8px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -201,7 +200,7 @@ a {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px -10px var(--accent);
+  box-shadow: 0 10px 24px -8px var(--accent);
 }
 
 .btn-secondary {
@@ -210,12 +209,12 @@ a {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: transparent;
+  background: var(--bg-card);
   color: var(--text-primary);
-  font-family: 'Sora', sans-serif;
-  font-weight: 500;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
   font-size: 0.875rem;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid var(--border);
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -231,11 +230,11 @@ a {
 .input-field {
   width: 100%;
   padding: 0.875rem 1rem;
-  background: var(--bg-secondary);
+  background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
   color: var(--text-primary);
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 0.9375rem;
   transition: all 0.2s ease;
 }
@@ -277,9 +276,9 @@ a {
   padding: 0.375rem 0.875rem;
   background: var(--accent-muted);
   color: var(--accent);
-  font-family: 'Sora', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-radius: 9999px;

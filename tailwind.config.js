@@ -7,14 +7,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sora: ['Sora', 'sans-serif'],
-        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
+        sora: ['Quicksand', 'sans-serif'],
+        jakarta: ['Nunito Sans', 'sans-serif'],
       },
       colors: {
         amber: {
-          500: '#f59e0b',
-          400: '#fbbf24',
-          600: '#d97706',
+          500: '#c2663b',
+          400: '#d98257',
+          600: '#a04f2b',
+        },
+        orange: {
+          500: '#7a9471',
+          600: '#5c7653',
         },
       },
       animation: {

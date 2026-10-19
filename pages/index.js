@@ -2,45 +2,20 @@ import Layout from "../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 import {
-    FaPython,
-    FaReact,
-    FaJs,
-    FaGitAlt,
-    FaRobot,
-    FaJava,
-    FaDocker,
-    FaDatabase,
-    FaCloud,
-    FaNetworkWired,
-    FaTerminal,
+    FaMusic,
+    FaChalkboardTeacher,
     FaArrowRight,
-    FaDownload,
+    FaGraduationCap,
     FaQuoteLeft,
     FaStar,
+    FaBriefcase,
 } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { testimonials } from "../data/testimonials";
-
-const skills = [
-    { icon: FaPython, name: "Python", category: "Languages" },
-    { icon: FaJs, name: "JavaScript", category: "Languages" },
-    { icon: SiTypescript, name: "TypeScript", category: "Languages" },
-    { icon: FaJava, name: "Java", category: "Languages" },
-    { icon: FaReact, name: "React", category: "Frontend" },
-    { icon: SiNextdotjs, name: "Next.js", category: "Frontend" },
-    { icon: SiTailwindcss, name: "Tailwind", category: "Frontend" },
-    { icon: FaDatabase, name: "SQL", category: "Backend" },
-    { icon: FaDocker, name: "Docker", category: "DevOps" },
-    { icon: FaCloud, name: "AWS", category: "Cloud" },
-    { icon: FaGitAlt, name: "Git", category: "Tools" },
-    { icon: FaRobot, name: "AI/ML", category: "AI" },
-    { icon: FaNetworkWired, name: "REST APIs", category: "Backend" },
-    { icon: FaTerminal, name: "Bash", category: "Tools" },
-];
+import { experience } from "../data/experience";
 
 export default function Home() {
     return (
-        <Layout title="Daniel Tham - Software Developer & STEM Educator">
+        <Layout title="Daniel Tham - Education Assistant & Piano Teacher">
             {/* Hero Section */}
             <section className="relative min-h-[90vh] flex items-center overflow-hidden">
                 {/* Background Elements */}
@@ -54,7 +29,7 @@ export default function Home() {
                 <div
                     className="absolute inset-0 opacity-[0.02]"
                     style={{
-                        backgroundImage: `linear-gradient(#fafafa 1px, transparent 1px), linear-gradient(90deg, #fafafa 1px, transparent 1px)`,
+                        backgroundImage: `linear-gradient(#2b2319 1px, transparent 1px), linear-gradient(90deg, #2b2319 1px, transparent 1px)`,
                         backgroundSize: '60px 60px'
                     }}
                 />
@@ -64,54 +39,50 @@ export default function Home() {
                         {/* Badge */}
                         <div className="animate-fade-up stagger-1">
                             <span className="badge mb-6">
-                                Available for Projects
+                                Now Accepting Piano Students
                             </span>
                         </div>
 
                         {/* Main Heading */}
                         <h1 className="animate-fade-up stagger-2 text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6">
-                            Building the future with{" "}
-                            <span className="text-gradient">code</span> &{" "}
-                            <span className="text-gradient">education</span>
+                            Empowering learners through{" "}
+                            <span className="text-gradient">education</span> &{" "}
+                            <span className="text-gradient">music</span>
                         </h1>
 
                         {/* Subtitle */}
-                        <p className="animate-fade-up stagger-3 text-xl md:text-2xl text-[#a1a1aa] leading-relaxed mb-8 max-w-2xl">
-                            Software Developer & STEM Educator crafting intelligent systems and empowering learners to thrive in an AI-driven world.
+                        <p className="animate-fade-up stagger-3 text-xl md:text-2xl text-[#6b5d4c] leading-relaxed mb-8 max-w-2xl">
+                            Education Assistant supporting IEP students, and a piano teacher helping young musicians ages 4–12 build confidence through music.
                         </p>
 
                         {/* CTA Buttons */}
                         <div className="animate-fade-up stagger-4 flex flex-wrap gap-4">
-                            <Link href="/projects" className="btn-primary group">
-                                View My Work
+                            <Link href="/services/piano-lessons" className="btn-primary group">
+                                Book a Piano Lesson
                                 <FaArrowRight className="text-sm transition-transform group-hover:translate-x-1" />
                             </Link>
                             <Link href="/contact" className="btn-secondary">
                                 Get In Touch
                             </Link>
-                            <a
-                                href="/resume.pdf"
-                                download
-                                className="btn-secondary group"
-                            >
-                                <FaDownload className="text-sm" />
-                                Resume
-                            </a>
+                            <Link href="/experience" className="btn-secondary group">
+                                <FaGraduationCap className="text-sm" />
+                                Experience & Education
+                            </Link>
                         </div>
 
                         {/* Stats */}
                         <div className="animate-fade-up stagger-5 mt-16 flex flex-wrap gap-8 md:gap-12">
                             <div>
-                                <div className="text-3xl md:text-4xl font-bold text-gradient">250+</div>
-                                <div className="text-sm text-[#71717a] mt-1">Students Taught</div>
+                                <div className="text-3xl md:text-4xl font-bold text-gradient">4–12</div>
+                                <div className="text-sm text-[#9c8b73] mt-1">Ages Taught (Piano)</div>
                             </div>
                             <div>
-                                <div className="text-3xl md:text-4xl font-bold text-gradient">20+</div>
-                                <div className="text-sm text-[#71717a] mt-1">Schools</div>
+                                <div className="text-3xl md:text-4xl font-bold text-gradient">1-on-1</div>
+                                <div className="text-sm text-[#9c8b73] mt-1">In-Person Lessons</div>
                             </div>
                             <div>
-                                <div className="text-3xl md:text-4xl font-bold text-gradient">5+</div>
-                                <div className="text-sm text-[#71717a] mt-1">Years Experience</div>
+                                <div className="text-3xl md:text-4xl font-bold text-gradient">3+</div>
+                                <div className="text-sm text-[#9c8b73] mt-1">Years Teaching</div>
                             </div>
                         </div>
                     </div>
@@ -119,7 +90,7 @@ export default function Home() {
 
                 {/* Scroll Indicator */}
                 <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in stagger-6">
-                    <div className="w-6 h-10 rounded-full border-2 border-[#27272a] flex items-start justify-center p-2">
+                    <div className="w-6 h-10 rounded-full border-2 border-[#e7dac3] flex items-start justify-center p-2">
                         <div className="w-1 h-2 bg-amber-500 rounded-full animate-bounce" />
                     </div>
                 </div>
@@ -135,7 +106,7 @@ export default function Home() {
                                 {/* Decorative elements */}
                                 <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-orange-600/20 rounded-3xl transform rotate-6" />
                                 <div className="absolute inset-0 glass-card rounded-3xl overflow-hidden">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-[#1c1c1f] to-[#0a0a0b]" />
+                                    <div className="absolute inset-0 bg-gradient-to-br from-[#fffdf7] to-[#fbf5ea]" />
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <div className="text-center p-8">
                                             <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 ring-4 ring-amber-500/30 relative">
@@ -147,17 +118,17 @@ export default function Home() {
                                                 />
                                             </div>
                                             <h3 className="text-2xl font-semibold mb-2">Daniel Tham</h3>
-                                            <p className="text-[#a1a1aa]">Software Developer</p>
-                                            <p className="text-[#a1a1aa]">STEM Educator</p>
+                                            <p className="text-[#6b5d4c]">Education Assistant</p>
+                                            <p className="text-[#6b5d4c]">Piano Teacher</p>
                                         </div>
                                     </div>
                                 </div>
                                 {/* Floating elements */}
                                 <div className="hidden sm:flex absolute -top-4 -right-4 w-20 h-20 glass-card rounded-2xl items-center justify-center text-amber-500 text-3xl animate-float" style={{animationDuration: '3s'}}>
-                                    <FaPython />
+                                    <FaMusic />
                                 </div>
                                 <div className="hidden sm:flex absolute -bottom-4 -left-4 w-16 h-16 glass-card rounded-2xl items-center justify-center text-amber-500 text-2xl animate-float" style={{animationDuration: '4s', animationDelay: '1s'}}>
-                                    <FaReact />
+                                    <FaChalkboardTeacher />
                                 </div>
                             </div>
                         </div>
@@ -166,22 +137,22 @@ export default function Home() {
                         <div>
                             <span className="badge mb-4">About Me</span>
                             <h2 className="section-title">
-                                Passionate about technology & teaching
+                                Passionate about teaching & music
                             </h2>
-                            <div className="space-y-4 text-[#a1a1aa] leading-relaxed">
+                            <div className="space-y-4 text-[#6b5d4c] leading-relaxed">
                                 <p>
-                                    I&apos;m <span className="text-white font-medium">Daniel Tham</span>, a dedicated software developer and STEM educator with a passion for building meaningful technology and delivering high-impact learning experiences.
+                                    I&apos;m <span className="text-[#2b2319] font-medium">Daniel Tham</span>, an Education Assistant and piano teacher dedicated to helping students learn, grow, and build confidence — whether that&apos;s in the classroom or at the piano.
                                 </p>
                                 <p>
-                                    I specialize in modern web development using <span className="text-amber-500">Next.js</span>, <span className="text-amber-500">React</span>, and <span className="text-amber-500">Tailwind CSS</span>, with fluency in Python, JavaScript, Java, and more. My work spans both software engineering and education.
+                                    As an <span className="text-amber-500">Education Assistant</span> at a CISVA elementary school, I support students with Individualized Education Plans (IEPs), help manage classroom activities, and work alongside the classroom teacher to create a structured, supportive learning environment.
                                 </p>
                                 <p>
-                                    I&apos;ve created and led curriculum in coding, robotics, mathematics, music, and artificial intelligence for learners aged 9 to 18. Whether developing AI tools or guiding students through their first Python project, I bring a thoughtful, structured approach that supports growth and curiosity.
+                                    I&apos;ve taught <span className="text-amber-500">piano</span> for the past year at Simusique Studio in Coquitlam, BC, teaching students ages 4 to 12 in 1-on-1, in-person lessons, and previously spent two years teaching ADST, coding, robotics, and 3D modeling at CISVA elementary schools — experience that shaped how I approach hands-on, student-centered teaching today.
                                 </p>
                             </div>
                             <div className="mt-8">
-                                <Link href="/services" className="btn-secondary group">
-                                    Explore My Services
+                                <Link href="/services/piano-lessons" className="btn-secondary group">
+                                    Explore Piano Lessons
                                     <FaArrowRight className="text-sm transition-transform group-hover:translate-x-1" />
                                 </Link>
                             </div>
@@ -190,34 +161,39 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Skills Section */}
+            {/* Experience Section */}
             <section className="py-24 relative">
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#111113] to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#f4ead9] to-transparent" />
 
                 <div className="relative max-w-6xl mx-auto px-6">
                     <div className="text-center mb-16">
-                        <span className="badge mb-4">Skills & Technologies</span>
+                        <span className="badge mb-4">Experience</span>
                         <h2 className="section-title">
-                            Tools I work with
+                            Where I&apos;ve taught
                         </h2>
                         <p className="section-subtitle mx-auto">
-                            A curated set of technologies I use to build modern, scalable solutions
+                            Current roles supporting students in the classroom and at the piano, plus the teaching background behind them
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
-                        {skills.map((skill, index) => (
-                            <div
-                                key={skill.name}
-                                className="glass-card glass-card-hover p-4 flex flex-col items-center gap-3 group cursor-default"
-                                style={{ animationDelay: `${index * 0.05}s` }}
-                            >
-                                <skill.icon className="text-3xl text-[#a1a1aa] group-hover:text-amber-500 transition-colors" />
-                                <span className="text-sm font-medium text-[#a1a1aa] group-hover:text-white transition-colors">
-                                    {skill.name}
-                                </span>
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        {experience.map((item, index) => (
+                            <div key={index} className="glass-card glass-card-hover p-5 flex flex-col">
+                                <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center mb-3">
+                                    <FaBriefcase className="text-amber-500 text-sm" />
+                                </div>
+                                <h3 className="font-semibold text-sm mb-1">{item.role}</h3>
+                                <p className="text-xs text-[#9c8b73]">{item.org}</p>
+                                <p className="text-xs text-[#9c8b73]">{item.period}</p>
                             </div>
                         ))}
+                    </div>
+
+                    <div className="text-center mt-12">
+                        <Link href="/experience" className="btn-secondary group">
+                            View Full Experience
+                            <FaArrowRight className="text-sm transition-transform group-hover:translate-x-1" />
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -231,7 +207,7 @@ export default function Home() {
                             What people say
                         </h2>
                         <p className="section-subtitle mx-auto">
-                            Feedback from students, parents, and educators I&apos;ve worked with
+                            Feedback from past coding & STEM tutoring students
                         </p>
                     </div>
 
@@ -254,12 +230,12 @@ export default function Home() {
                                 </div>
 
                                 {/* Content */}
-                                <p className="text-[#a1a1aa] leading-relaxed mb-6">
+                                <p className="text-[#6b5d4c] leading-relaxed mb-6">
                                     &ldquo;{testimonial.content}&rdquo;
                                 </p>
 
                                 {/* Author */}
-                                <div className="flex items-center gap-3 pt-4 border-t border-[#27272a]">
+                                <div className="flex items-center gap-3 pt-4 border-t border-[#e7dac3]">
                                     <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-600/20 flex items-center justify-center">
                                         <span className="text-amber-500 font-semibold text-sm">
                                             {testimonial.name.charAt(0)}
@@ -267,7 +243,7 @@ export default function Home() {
                                     </div>
                                     <div>
                                         <p className="font-medium text-sm">{testimonial.name}</p>
-                                        <p className="text-xs text-[#71717a]">{testimonial.role}</p>
+                                        <p className="text-xs text-[#9c8b73]">{testimonial.role}</p>
                                     </div>
                                 </div>
                             </div>
@@ -286,10 +262,10 @@ export default function Home() {
 
                         <div className="relative">
                             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                                Ready to start a project?
+                                Ready to start lessons?
                             </h2>
-                            <p className="text-[#a1a1aa] text-lg mb-8 max-w-xl mx-auto">
-                                Whether you need a developer for your next project or a tutor for STEM education, I&apos;d love to hear from you.
+                            <p className="text-[#6b5d4c] text-lg mb-8 max-w-xl mx-auto">
+                                Whether you&apos;re looking for piano lessons for your child or just want to say hello, I&apos;d love to hear from you.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4">
                                 <Link href="/contact" className="btn-primary group">
@@ -297,7 +273,7 @@ export default function Home() {
                                     <FaArrowRight className="text-sm transition-transform group-hover:translate-x-1" />
                                 </Link>
                                 <Link href="/projects" className="btn-secondary">
-                                    View Projects
+                                    See Past Work
                                 </Link>
                             </div>
                         </div>

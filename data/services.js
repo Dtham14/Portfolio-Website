@@ -1,9 +1,32 @@
-import { FaCode, FaCube, FaMusic, FaCalculator, FaBrain, FaChalkboardTeacher } from "react-icons/fa";
+import { FaCode, FaCube, FaMusic, FaChalkboardTeacher } from "react-icons/fa";
 
 export const services = [
     {
+        slug: "piano-lessons",
+        title: "Piano Lessons",
+        category: "current",
+        shortDescription:
+            "1-on-1, in-person piano lessons for young learners ages 4–12 at Simusique Studio in Coquitlam, BC",
+        curriculum: [
+            "Note reading & keyboard fundamentals",
+            "Technique and finger exercises",
+            "Repertoire suited to the student's level",
+            "Rhythm and ear training",
+            "Performance preparation"
+        ],
+        idealFor: [
+            "Beginners ages 4–12",
+            "Parents looking for a patient, structured in-person teacher"
+        ],
+        icon: FaMusic,
+        rate: "$60/hour",
+        format: "In-person at Simusique Studio, Coquitlam, BC",
+        outcome: "Steady progress and growing confidence at the piano",
+    },
+    {
         slug: "coding-lessons",
         title: "Coding Lessons",
+        category: "past",
         shortDescription:
             "Personalized, project-based coding instruction for students and beginners",
         curriculum: [
@@ -24,50 +47,9 @@ export const services = [
         outcome: "Build real, working projects while learning core programming skills",
     },
     {
-        slug: "math-tutoring",
-        title: "Math Tutoring",
-        shortDescription:
-            "Concept-focused math support tailored to student needs",
-        curriculum: [
-            "Initial Assessment & Goal Setting",
-            "Review of Core Concepts (arithmetic, fractions, algebra, calculus basics)",
-            "Problem-solving strategies",
-            "Homework and exam preparation",
-            "Confidence-building through guided practice"
-        ],
-        idealFor: [
-            "Elementary to high school students",
-            "Students needing remediation or enrichment"
-        ],
-        icon: FaCalculator,
-        rate: "$35/hour",
-        format: "1-on-1",
-        outcome: "Stronger understanding, improved grades, and math confidence",
-    },
-    {
-        slug: "music-lessons",
-        title: "Music Lessons",
-        shortDescription:
-            "Develop musical understanding through theory, composition, and performance",
-        curriculum: [
-            "Introduction to Music Theory (notation, intervals, chords)",
-            "Instrument Technique (piano-focused, adaptable to others)",
-            "Ear training and rhythm development",
-            "Composition and musical creativity",
-            "Optional technology integration (notation software & digital tools)"
-        ],
-        idealFor: [
-            "Beginners to intermediate students",
-            "Learners interested in both music and technology"
-        ],
-        icon: FaMusic,
-        rate: "$45/hour",
-        format: "1-on-1",
-        outcome: "A strong foundation in music with practical and creative skills",
-    },
-    {
         slug: "3d-modeling",
         title: "3D Modeling with TinkerCAD",
+        category: "past",
         shortDescription:
             "Hands-on 3D design for beginners",
         curriculum: [
@@ -87,30 +69,9 @@ export const services = [
         outcome: "Create polished 3D models while learning design thinking",
     },
     {
-        slug: "ai-counseling",
-        title: "AI Counseling",
-        shortDescription:
-            "Strategic guidance on using AI for real-world applications",
-        curriculum: [
-            "Introduction to AI concepts (in plain language)",
-            "Identifying AI opportunities for your project or business",
-            "Evaluating tools (ChatGPT, automation platforms, AI APIs)",
-            "Ethical and practical considerations",
-            "Next steps and implementation roadmap"
-        ],
-        idealFor: [
-            "Entrepreneurs",
-            "Educators",
-            "Creators and developers exploring AI adoption"
-        ],
-        icon: FaBrain,
-        rate: "$60/hour",
-        format: "Consultation",
-        outcome: "Clear direction on how AI can support your goals",
-    },
-    {
         slug: "ai-education",
         title: "AI Education",
+        category: "past",
         shortDescription:
             "Learn how AI works and how to use it effectively",
         curriculum: [
@@ -122,8 +83,7 @@ export const services = [
         ],
         idealFor: [
             "Students and educators",
-            "Beginners interested in AI literacy",
-            "Professionals wanting foundational AI knowledge"
+            "Beginners interested in AI literacy"
         ],
         icon: FaChalkboardTeacher,
         rate: "$55/hour",

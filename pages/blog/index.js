@@ -24,8 +24,8 @@ export default function Blog() {
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">
                             Insights & <span className="text-gradient">Thoughts</span>
                         </h1>
-                        <p className="text-lg text-[#a1a1aa] leading-relaxed">
-                            Exploring coding, AI, education, and technology. Dive into tutorials, insights, and lessons learned along the way.
+                        <p className="text-lg text-[#6b5d4c] leading-relaxed">
+                            Exploring education, teaching, and technology. Dive into tutorials, insights, and lessons learned along the way.
                         </p>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ export default function Blog() {
                     {blogPosts.length === 0 ? (
                         <div className="glass-card p-12 text-center">
                             <h2 className="text-2xl font-semibold mb-2">Coming Soon</h2>
-                            <p className="text-[#a1a1aa]">
+                            <p className="text-[#6b5d4c]">
                                 Stay tuned for upcoming articles on coding, AI, and education.
                             </p>
                         </div>
@@ -59,23 +59,23 @@ export default function Blog() {
                                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                                                 />
                                             ) : (
-                                                <div className="absolute inset-0 bg-gradient-to-br from-[#1c1c1f] via-[#27272a] to-[#1c1c1f] flex items-center justify-center">
+                                                <div className="absolute inset-0 bg-gradient-to-br from-[#fffdf7] via-[#e7dac3] to-[#fffdf7] flex items-center justify-center">
                                                     <span className="text-6xl font-bold text-amber-500/20">Blog</span>
                                                 </div>
                                             )}
-                                            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1c1c1f] md:block hidden" />
+                                            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#fffdf7] md:block hidden" />
                                         </div>
                                         <div className="p-8 md:p-10 flex flex-col justify-center">
                                             <span className="badge mb-4 w-fit">Featured</span>
                                             <h2 className="text-2xl md:text-3xl font-bold mb-3 group-hover:text-amber-500 transition-colors">
                                                 {blogPosts[0].title}
                                             </h2>
-                                            <p className="text-[#a1a1aa] leading-relaxed mb-4 line-clamp-3">
+                                            <p className="text-[#6b5d4c] leading-relaxed mb-4 line-clamp-3">
                                                 {blogPosts[0].excerpt}
                                             </p>
 
                                             {/* Meta info */}
-                                            <div className="flex flex-wrap items-center gap-4 text-sm text-[#71717a] mb-6">
+                                            <div className="flex flex-wrap items-center gap-4 text-sm text-[#9c8b73] mb-6">
                                                 <div className="flex items-center gap-2">
                                                     <FaCalendar className="text-xs" />
                                                     {formatDate(blogPosts[0].date)}
@@ -89,7 +89,7 @@ export default function Blog() {
                                             </div>
 
                                             {/* Author */}
-                                            <div className="flex items-center gap-3 pt-4 border-t border-[#27272a]">
+                                            <div className="flex items-center gap-3 pt-4 border-t border-[#e7dac3]">
                                                 <div className="w-10 h-10 rounded-full overflow-hidden relative">
                                                     <Image
                                                         src={blogPosts[0].author.image}
@@ -100,7 +100,7 @@ export default function Blog() {
                                                 </div>
                                                 <div>
                                                     <p className="text-sm font-medium">{blogPosts[0].author.name}</p>
-                                                    <p className="text-xs text-[#71717a]">{blogPosts[0].author.role}</p>
+                                                    <p className="text-xs text-[#9c8b73]">{blogPosts[0].author.role}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -126,12 +126,12 @@ export default function Blog() {
                                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                                                     />
                                                 ) : (
-                                                    <div className="absolute inset-0 bg-gradient-to-br from-[#1c1c1f] via-[#27272a] to-[#1c1c1f]" />
+                                                    <div className="absolute inset-0 bg-gradient-to-br from-[#fffdf7] via-[#e7dac3] to-[#fffdf7]" />
                                                 )}
-                                                <div className="absolute inset-0 bg-gradient-to-t from-[#1c1c1f] to-transparent" />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-[#fffdf7] to-transparent" />
                                             </div>
                                             <div className="p-6">
-                                                <div className="flex items-center gap-3 text-xs text-[#71717a] mb-3">
+                                                <div className="flex items-center gap-3 text-xs text-[#9c8b73] mb-3">
                                                     <span>{formatDate(post.date)}</span>
                                                     {post.readTime && (
                                                         <>
@@ -143,7 +143,7 @@ export default function Blog() {
                                                 <h3 className="text-lg font-semibold mb-2 group-hover:text-amber-500 transition-colors">
                                                     {post.title}
                                                 </h3>
-                                                <p className="text-[#a1a1aa] text-sm line-clamp-2 mb-4">
+                                                <p className="text-[#6b5d4c] text-sm line-clamp-2 mb-4">
                                                     {post.excerpt}
                                                 </p>
                                                 <div className="flex items-center justify-between">
@@ -156,7 +156,7 @@ export default function Blog() {
                                                                 className="object-cover"
                                                             />
                                                         </div>
-                                                        <span className="text-xs text-[#71717a]">{post.author.name}</span>
+                                                        <span className="text-xs text-[#9c8b73]">{post.author.name}</span>
                                                     </div>
                                                     <FaArrowRight className="text-xs text-amber-500 transition-transform group-hover:translate-x-1" />
                                                 </div>

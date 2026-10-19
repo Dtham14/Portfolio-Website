@@ -55,8 +55,8 @@ export default function Contact() {
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
                         Let&apos;s <span className="text-gradient">Connect</span>
                     </h1>
-                    <p className="text-lg text-[#a1a1aa] leading-relaxed max-w-2xl mx-auto">
-                        Have a project in mind or interested in tutoring services? I&apos;d love to hear from you. Fill out the form below and I&apos;ll get back to you soon.
+                    <p className="text-lg text-[#6b5d4c] leading-relaxed max-w-2xl mx-auto">
+                        Interested in piano lessons or have a question about my work? I&apos;d love to hear from you. Fill out the form below and I&apos;ll get back to you soon.
                     </p>
                 </div>
             </section>
@@ -69,8 +69,8 @@ export default function Contact() {
                         <div className="lg:col-span-2 space-y-8">
                             <div>
                                 <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
-                                <p className="text-[#a1a1aa] leading-relaxed">
-                                    Whether you&apos;re looking for development services, tutoring, or just want to say hello, I&apos;m here to help.
+                                <p className="text-[#6b5d4c] leading-relaxed">
+                                    Whether you&apos;re looking for piano lessons, have a question about my experience, or just want to say hello, I&apos;m here to help.
                                 </p>
                             </div>
 
@@ -83,7 +83,7 @@ export default function Contact() {
                                         <h3 className="font-medium mb-1">Email</h3>
                                         <a
                                             href="mailto:decodewithdaniel@gmail.com"
-                                            className="text-[#a1a1aa] hover:text-amber-500 transition-colors"
+                                            className="text-[#6b5d4c] hover:text-amber-500 transition-colors"
                                         >
                                             decodewithdaniel@gmail.com
                                         </a>
@@ -96,21 +96,21 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="font-medium mb-1">Location</h3>
-                                        <p className="text-[#a1a1aa]">
+                                        <p className="text-[#6b5d4c]">
                                             Vancouver, BC, Canada
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="pt-6 border-t border-[#27272a]">
+                            <div className="pt-6 border-t border-[#e7dac3]">
                                 <h3 className="font-medium mb-4">Connect on Social</h3>
                                 <div className="flex gap-3">
                                     <a
                                         href="https://github.com/Dtham14"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-12 h-12 rounded-xl bg-[#1c1c1f] border border-[#27272a] flex items-center justify-center text-[#a1a1aa] hover:text-amber-500 hover:border-amber-500 transition-all"
+                                        className="w-12 h-12 rounded-xl bg-[#fffdf7] border border-[#e7dac3] flex items-center justify-center text-[#6b5d4c] hover:text-amber-500 hover:border-amber-500 transition-all"
                                         aria-label="GitHub"
                                     >
                                         <FaGithub className="text-xl" />
@@ -119,7 +119,7 @@ export default function Contact() {
                                         href="https://www.linkedin.com/in/dtham14/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-12 h-12 rounded-xl bg-[#1c1c1f] border border-[#27272a] flex items-center justify-center text-[#a1a1aa] hover:text-amber-500 hover:border-amber-500 transition-all"
+                                        className="w-12 h-12 rounded-xl bg-[#fffdf7] border border-[#e7dac3] flex items-center justify-center text-[#6b5d4c] hover:text-amber-500 hover:border-amber-500 transition-all"
                                         aria-label="LinkedIn"
                                     >
                                         <FaLinkedin className="text-xl" />
@@ -137,7 +137,7 @@ export default function Contact() {
                                             <FaCheck className="text-3xl text-green-500" />
                                         </div>
                                         <h3 className="text-2xl font-bold mb-2">Message Sent!</h3>
-                                        <p className="text-[#a1a1aa] mb-6">
+                                        <p className="text-[#6b5d4c] mb-6">
                                             Thank you for reaching out. I&apos;ll get back to you within 24 hours.
                                         </p>
                                         <button
@@ -151,7 +151,7 @@ export default function Contact() {
                                     <form onSubmit={handleSubmit} className="space-y-6">
                                         <div className="grid sm:grid-cols-2 gap-6">
                                             <div>
-                                                <label className="block text-sm text-[#a1a1aa] mb-2" htmlFor="name">
+                                                <label className="block text-sm text-[#6b5d4c] mb-2" htmlFor="name">
                                                     Your Name
                                                 </label>
                                                 <input
@@ -167,7 +167,7 @@ export default function Contact() {
                                             </div>
 
                                             <div>
-                                                <label className="block text-sm text-[#a1a1aa] mb-2" htmlFor="email">
+                                                <label className="block text-sm text-[#6b5d4c] mb-2" htmlFor="email">
                                                     Email Address
                                                 </label>
                                                 <input
@@ -184,7 +184,7 @@ export default function Contact() {
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm text-[#a1a1aa] mb-2" htmlFor="message">
+                                            <label className="block text-sm text-[#6b5d4c] mb-2" htmlFor="message">
                                                 Your Message
                                             </label>
                                             <textarea
@@ -236,15 +236,15 @@ export default function Contact() {
                         <div className="relative grid md:grid-cols-3 gap-8 text-center">
                             <div>
                                 <h3 className="text-3xl font-bold text-gradient mb-2">24h</h3>
-                                <p className="text-[#a1a1aa]">Average Response Time</p>
+                                <p className="text-[#6b5d4c]">Average Response Time</p>
                             </div>
                             <div>
                                 <h3 className="text-3xl font-bold text-gradient mb-2">100%</h3>
-                                <p className="text-[#a1a1aa]">Commitment to Quality</p>
+                                <p className="text-[#6b5d4c]">Commitment to Quality</p>
                             </div>
                             <div>
                                 <h3 className="text-3xl font-bold text-gradient mb-2">Free</h3>
-                                <p className="text-[#a1a1aa]">Initial Consultation</p>
+                                <p className="text-[#6b5d4c]">Initial Consultation</p>
                             </div>
                         </div>
                     </div>

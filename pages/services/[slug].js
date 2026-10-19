@@ -47,7 +47,7 @@ export default function ServiceDetail() {
             <Layout title="Service Not Found">
                 <div className="max-w-4xl mx-auto px-6 py-24 text-center">
                     <h1 className="text-4xl font-bold text-red-500 mb-4">Service Not Found</h1>
-                    <p className="text-[#a1a1aa] mb-8">
+                    <p className="text-[#6b5d4c] mb-8">
                         Sorry, we couldn&apos;t find the service you&apos;re looking for.
                     </p>
                     <Link href="/services" className="btn-primary">
@@ -69,7 +69,7 @@ export default function ServiceDetail() {
                 <div className="relative max-w-4xl mx-auto px-6">
                     <Link
                         href="/services"
-                        className="inline-flex items-center gap-2 text-sm text-[#71717a] hover:text-amber-500 transition-colors mb-8"
+                        className="inline-flex items-center gap-2 text-sm text-[#9c8b73] hover:text-amber-500 transition-colors mb-8"
                     >
                         <FaArrowLeft className="text-xs" />
                         Back to Services
@@ -81,9 +81,9 @@ export default function ServiceDetail() {
                         </div>
                         <div>
                             <h1 className="text-4xl md:text-5xl font-bold mb-2">{service.title}</h1>
-                            <div className="flex flex-wrap items-center gap-4 text-sm text-[#a1a1aa]">
+                            <div className="flex flex-wrap items-center gap-4 text-sm text-[#6b5d4c]">
                                 <span className="text-2xl font-bold text-gradient">{service.rate}</span>
-                                <span className="px-3 py-1 bg-[#27272a] rounded-full">{service.format}</span>
+                                <span className="px-3 py-1 bg-[#e7dac3] rounded-full">{service.format}</span>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@ export default function ServiceDetail() {
                             {/* Overview */}
                             <div className="glass-card p-8">
                                 <h2 className="text-xl font-semibold mb-4">Overview</h2>
-                                <p className="text-[#a1a1aa] leading-relaxed mb-6">
+                                <p className="text-[#6b5d4c] leading-relaxed mb-6">
                                     {service.shortDescription}
                                 </p>
 
@@ -108,7 +108,7 @@ export default function ServiceDetail() {
                                     <FaTrophy className="text-amber-500 mt-1 flex-shrink-0" />
                                     <div>
                                         <p className="text-sm font-medium text-amber-500 mb-1">Outcome</p>
-                                        <p className="text-[#fafafa]">{service.outcome}</p>
+                                        <p className="text-[#2b2319]">{service.outcome}</p>
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@ export default function ServiceDetail() {
                                                 <FaCheck className="text-amber-500 text-sm" />
                                             </div>
                                             <div>
-                                                <p className="text-[#fafafa]">{item}</p>
+                                                <p className="text-[#2b2319]">{item}</p>
                                             </div>
                                         </div>
                                     ))}
@@ -140,7 +140,7 @@ export default function ServiceDetail() {
                                     {service.idealFor.map((item, index) => (
                                         <div key={index} className="flex items-center gap-3">
                                             <div className="w-2 h-2 rounded-full bg-amber-500" />
-                                            <p className="text-[#a1a1aa]">{item}</p>
+                                            <p className="text-[#6b5d4c]">{item}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -157,7 +157,7 @@ export default function ServiceDetail() {
                                             <FaCheck className="text-xl text-green-500" />
                                         </div>
                                         <h4 className="font-semibold mb-2">Request Sent!</h4>
-                                        <p className="text-sm text-[#a1a1aa] mb-4">
+                                        <p className="text-sm text-[#6b5d4c] mb-4">
                                             I&apos;ll get back to you within 24 hours.
                                         </p>
                                         <button
@@ -170,7 +170,7 @@ export default function ServiceDetail() {
                                 ) : (
                                     <form className="space-y-4" onSubmit={handleSubmit}>
                                         <div>
-                                            <label className="block text-sm text-[#a1a1aa] mb-2">
+                                            <label className="block text-sm text-[#6b5d4c] mb-2">
                                                 Your Name
                                             </label>
                                             <input
@@ -184,7 +184,7 @@ export default function ServiceDetail() {
                                             />
                                         </div>
                                         <div>
-                                            <label className="block text-sm text-[#a1a1aa] mb-2">
+                                            <label className="block text-sm text-[#6b5d4c] mb-2">
                                                 Email
                                             </label>
                                             <input
@@ -198,7 +198,7 @@ export default function ServiceDetail() {
                                             />
                                         </div>
                                         <div>
-                                            <label className="block text-sm text-[#a1a1aa] mb-2">
+                                            <label className="block text-sm text-[#6b5d4c] mb-2">
                                                 Message / Preferred Schedule
                                             </label>
                                             <textarea
@@ -217,8 +217,8 @@ export default function ServiceDetail() {
                                     </form>
                                 )}
 
-                                <div className="mt-6 pt-6 border-t border-[#27272a]">
-                                    <p className="text-xs text-[#71717a] text-center">
+                                <div className="mt-6 pt-6 border-t border-[#e7dac3]">
+                                    <p className="text-xs text-[#9c8b73] text-center">
                                         First consultation is free!
                                     </p>
                                 </div>
@@ -249,7 +249,7 @@ export default function ServiceDetail() {
                                         <h3 className="font-medium group-hover:text-amber-500 transition-colors">
                                             {s.title}
                                         </h3>
-                                        <p className="text-sm text-[#71717a]">{s.rate}</p>
+                                        <p className="text-sm text-[#9c8b73]">{s.rate}</p>
                                     </div>
                                 </Link>
                             ))}

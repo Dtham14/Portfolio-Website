@@ -7,7 +7,7 @@ export const blogPosts = [
         readTime: "6 min read",
         author: {
             name: "Daniel Tham",
-            role: "Software Developer & STEM Educator",
+            role: "Education Assistant & Piano Teacher",
             image: "/profile-image.jpg",
         },
         image: "/classroom.png",

@@ -13,8 +13,9 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
 
     const navLinks = [
         { href: "/", label: "Home" },
-        { href: "/projects", label: "Projects" },
-        { href: "/services", label: "Services" },
+        { href: "/services/piano-lessons", label: "Piano Lessons" },
+        { href: "/experience", label: "Experience" },
+        { href: "/projects", label: "Other Work" },
         { href: "/blog", label: "Blog" },
         { href: "/contact", label: "Contact" },
     ];
@@ -36,7 +37,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
         <div className="min-h-screen flex flex-col">
             <Head>
                 <title>{title}</title>
-                <meta name="description" content="Daniel Tham - Software Developer & STEM Educator" />
+                <meta name="description" content="Daniel Tham - Education Assistant & Piano Teacher" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -45,7 +46,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
             <nav
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
                     scrolled
-                        ? "py-3 bg-[#0a0a0b]/80 backdrop-blur-xl border-b border-[#27272a]"
+                        ? "py-3 bg-[#fbf5ea]/80 backdrop-blur-xl border-b border-[#e7dac3]"
                         : "py-5 bg-transparent"
                 }`}
             >
@@ -67,7 +68,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                                     className={`relative px-4 py-2 text-sm font-medium transition-colors ${
                                         isActive(link.href)
                                             ? "text-amber-500"
-                                            : "text-[#a1a1aa] hover:text-white"
+                                            : "text-[#6b5d4c] hover:text-[#2b2319]"
                                     }`}
                                 >
                                     {link.label}
@@ -92,7 +93,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                        className="md:hidden p-2 text-2xl text-[#a1a1aa] hover:text-white transition-colors"
+                        className="md:hidden p-2 text-2xl text-[#6b5d4c] hover:text-[#2b2319] transition-colors"
                         aria-label="Toggle menu"
                     >
                         {mobileMenuOpen ? <HiX /> : <HiMenuAlt4 />}
@@ -101,7 +102,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
 
                 {/* Mobile Menu */}
                 {mobileMenuOpen && (
-                    <div className="md:hidden absolute top-full left-0 right-0 bg-[#111113] border-b border-[#27272a] py-4 animate-fade-in">
+                    <div className="md:hidden absolute top-full left-0 right-0 bg-[#f4ead9] border-b border-[#e7dac3] py-4 animate-fade-in">
                         <ul className="max-w-6xl mx-auto px-6 space-y-1">
                             {navLinks.map((link) => (
                                 <li key={link.href}>
@@ -110,8 +111,8 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                                         onClick={() => setMobileMenuOpen(false)}
                                         className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                                             isActive(link.href)
-                                                ? "bg-[#1c1c1f] text-amber-500"
-                                                : "text-[#a1a1aa] hover:bg-[#1c1c1f] hover:text-white"
+                                                ? "bg-[#fffdf7] text-amber-500"
+                                                : "text-[#6b5d4c] hover:bg-[#fffdf7] hover:text-[#2b2319]"
                                         }`}
                                     >
                                         {link.label}
@@ -138,7 +139,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
             </main>
 
             {/* Footer */}
-            <footer className="border-t border-[#27272a] bg-[#0a0a0b]">
+            <footer className="border-t border-[#e7dac3] bg-[#fbf5ea]">
                 <div className="max-w-6xl mx-auto px-6 py-16">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                         {/* Brand */}
@@ -149,15 +150,15 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                                     Daniel Tham
                                 </span>
                             </Link>
-                            <p className="text-[#71717a] text-sm leading-relaxed max-w-sm mb-6">
-                                Software Developer & STEM Educator passionate about building intelligent systems and empowering the next generation of learners.
+                            <p className="text-[#9c8b73] text-sm leading-relaxed max-w-sm mb-6">
+                                Education Assistant and piano teacher passionate about supporting students in the classroom and helping young musicians grow through music.
                             </p>
                             <div className="flex gap-3">
                                 <a
                                     href="https://github.com/Dtham14"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-10 h-10 rounded-lg bg-[#1c1c1f] border border-[#27272a] flex items-center justify-center text-[#a1a1aa] hover:text-amber-500 hover:border-amber-500 transition-all"
+                                    className="w-10 h-10 rounded-lg bg-[#fffdf7] border border-[#e7dac3] flex items-center justify-center text-[#6b5d4c] hover:text-amber-500 hover:border-amber-500 transition-all"
                                     aria-label="GitHub"
                                 >
                                     <AiFillGithub className="text-xl" />
@@ -166,7 +167,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                                     href="https://www.linkedin.com/in/dtham14/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-10 h-10 rounded-lg bg-[#1c1c1f] border border-[#27272a] flex items-center justify-center text-[#a1a1aa] hover:text-amber-500 hover:border-amber-500 transition-all"
+                                    className="w-10 h-10 rounded-lg bg-[#fffdf7] border border-[#e7dac3] flex items-center justify-center text-[#6b5d4c] hover:text-amber-500 hover:border-amber-500 transition-all"
                                     aria-label="LinkedIn"
                                 >
                                     <AiFillLinkedin className="text-xl" />
@@ -175,7 +176,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                                     href="https://www.quiznotes.ca/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-10 h-10 rounded-lg bg-[#1c1c1f] border border-[#27272a] flex items-center justify-center hover:border-amber-500 transition-all overflow-hidden group"
+                                    className="w-10 h-10 rounded-lg bg-[#fffdf7] border border-[#e7dac3] flex items-center justify-center hover:border-amber-500 transition-all overflow-hidden group"
                                     aria-label="QuizNotes"
                                 >
                                     <Image src="/quiznotes logo.jpg" alt="QuizNotes" width={24} height={24} className="rounded object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all" />
@@ -185,7 +186,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
 
                         {/* Quick Links */}
                         <div>
-                            <h4 className="font-semibold text-sm uppercase tracking-wider text-[#a1a1aa] mb-4">
+                            <h4 className="font-semibold text-sm uppercase tracking-wider text-[#6b5d4c] mb-4">
                                 Navigation
                             </h4>
                             <ul className="space-y-3">
@@ -193,7 +194,7 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                                     <li key={link.href}>
                                         <Link
                                             href={link.href}
-                                            className="text-sm text-[#71717a] hover:text-amber-500 transition-colors"
+                                            className="text-sm text-[#9c8b73] hover:text-amber-500 transition-colors"
                                         >
                                             {link.label}
                                         </Link>
@@ -204,28 +205,28 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
 
                         {/* Services */}
                         <div>
-                            <h4 className="font-semibold text-sm uppercase tracking-wider text-[#a1a1aa] mb-4">
+                            <h4 className="font-semibold text-sm uppercase tracking-wider text-[#6b5d4c] mb-4">
                                 Services
                             </h4>
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/services/coding-lessons" className="text-sm text-[#71717a] hover:text-amber-500 transition-colors">
-                                        Coding Lessons
+                                    <Link href="/services/piano-lessons" className="text-sm text-[#9c8b73] hover:text-amber-500 transition-colors">
+                                        Piano Lessons
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/services/ai-education" className="text-sm text-[#71717a] hover:text-amber-500 transition-colors">
-                                        AI Education
+                                    <Link href="/experience" className="text-sm text-[#9c8b73] hover:text-amber-500 transition-colors">
+                                        Experience
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/services/3d-modeling" className="text-sm text-[#71717a] hover:text-amber-500 transition-colors">
-                                        3D Modeling
+                                    <Link href="/projects" className="text-sm text-[#9c8b73] hover:text-amber-500 transition-colors">
+                                        Other Work
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/services/math-tutoring" className="text-sm text-[#71717a] hover:text-amber-500 transition-colors">
-                                        Math Tutoring
+                                    <Link href="/services" className="text-sm text-[#9c8b73] hover:text-amber-500 transition-colors">
+                                        All Services
                                     </Link>
                                 </li>
                             </ul>
@@ -233,11 +234,11 @@ export default function Layout({ children, title = "Daniel Tham Portfolio" }) {
                     </div>
 
                     {/* Bottom Bar */}
-                    <div className="pt-8 border-t border-[#1f1f22] flex flex-col sm:flex-row items-center justify-between gap-4">
-                        <p className="text-xs text-[#71717a]">
+                    <div className="pt-8 border-t border-[#efe3cd] flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <p className="text-xs text-[#9c8b73]">
                             © 2025 Daniel Tham. All rights reserved.
                         </p>
-                        <p className="text-xs text-[#52525b]">
+                        <p className="text-xs text-[#b3a48c]">
                             Built with Next.js & Tailwind CSS
                         </p>
                     </div>
